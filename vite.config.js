@@ -6,8 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vue-mob/',
   plugins: [vue(), vueDevTools()],
-  base: 'vue-mob/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
