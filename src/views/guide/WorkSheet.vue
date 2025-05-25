@@ -782,85 +782,85 @@ const isScrollTop = window.scrollY;
 </script>
 
 <style scoped lang="scss">
-    .work-tit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 36px;
-        font-weight: 700;
-        min-width: 1440px;
-        padding: 30px 10px 40px;
-        text-align: center;
-        .point {
-            display: inline-flex;
-            align-items: center;
-            color: #0071f2;
-            margin-right: 8px;
-        }
-        .logo {
-            margin-top: -8px;
-            margin-right: 4px;
-        }
-    }
-
-    .work-anchor {
+.work-tit {
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    // @include flex($jc:space-between, $gap: 24px);
-    padding: 2px 10px;
-    margin:0 -10px;
-    text-align: right;
-    background-color: #fff;
-  .left {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
-    // @include flex($ai:center);
-    .q-separator--vertical {
-      margin: 5px 10px;
-    }
-    .work-txt {
-      font-size: 13px;
-      color: #444;
-      margin: 0;
-    }
-
-    a {
-      &.btn-txt {
-        // @include flex($ai:center, $gap:4px);
+    font-size: 36px;
+    font-weight: 700;
+    min-width: 1440px;
+    padding: 30px 10px 40px;
+    text-align: center;
+    .point {
         display: inline-flex;
         align-items: center;
-        gap: 4px;
-        font-size: 13px;
-      }
+        color: #0071f2;
+        margin-right: 8px;
     }
-  }
+    .logo {
+        margin-top: -8px;
+        margin-right: 4px;
+    }
+}
 
-  .right {
-    // @include flex;
-    display: flex;
-  }
-  
-  .work-space {
-    height: 16px;
-  }
+.work-anchor {
+display: flex;
+justify-content: space-between;
+gap: 24px;
+// @include flex($jc:space-between, $gap: 24px);
+padding: 2px 10px;
+margin:0 -10px;
+text-align: right;
+background-color: #fff;
+.left {
+display: flex;
+align-items: center;
+gap: 8px;
+// @include flex($ai:center);
+.q-separator--vertical {
+  margin: 5px 10px;
+}
+.work-txt {
+  font-size: 13px;
+  color: #444;
+  margin: 0;
+}
 
-  .btn-anchor {
+a {
+  &.btn-txt {
+    // @include flex($ai:center, $gap:4px);
     display: inline-flex;
+    align-items: center;
+    gap: 4px;
     font-size: 13px;
-    color:#fff;
-    padding: 0 5px;
-    margin-bottom: 4px;
-    border-radius: 3px;
-    background-color: #00B3E3;
-    &:not(:first-child) {
-      margin-left: 4px;
-    }
-    &.active {
-      background-color: #000;
-    }
   }
+}
+}
+
+.right {
+// @include flex;
+display: flex;
+}
+
+.work-space {
+height: 16px;
+}
+
+.btn-anchor {
+display: inline-flex;
+font-size: 13px;
+color:#fff;
+padding: 0 5px;
+margin-bottom: 4px;
+border-radius: 3px;
+background-color: #00B3E3;
+&:not(:first-child) {
+  margin-left: 4px;
+}
+&.active {
+  background-color: #000;
+}
+}
 }
 
 .work-head {
