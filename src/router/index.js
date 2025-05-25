@@ -5,8 +5,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'WorkSheet',
-      component: () => import('../views/guide/WorkSheet.vue'),
+      name: 'worksheet',
+      component: () => import('@/views/guide/WorkSheet.vue'),
     },
   ],
 })
