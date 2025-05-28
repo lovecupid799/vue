@@ -25,19 +25,27 @@
           </li>
           <li class="li">
               <p class="tit">
-                <span class="span">마크업</span> 공통
+                <span class="span">퍼블</span> 컴포넌트 정보
+              </p>
+            <ul class="ul">
+              <li>컴포넌트 목록</li>
+              <li>컴포넌트 네이밍 정보</li>
+            </ul>
+          </li>
+          <li class="li">
+              <p class="tit">
+                <span class="span">퍼블</span> 컴포넌트
               </p>
             <ul class="ul">
               <li>
-                <router-link :to="{ name: 'rule' }"
-                    >리소스 정보</router-link
-                >
+                타이틀
               </li>
-              <!-- <li>
-                <router-link :to="{ name: 'com' }"
-                    >공통 요소</router-link
-                >
-              </li> -->
+              <li>
+                폼요소
+              </li>
+              <li>
+                기타
+              </li>
             </ul>
           </li>
           <!-- <li class="li">
@@ -97,7 +105,6 @@
 </template>
 
 <style lang="scss">
-  @use "@/assets/scss/abstracts";
   @use "@/assets/scss/guide/guide";
 </style>
   
