@@ -1,0 +1,141 @@
+#guide-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  #guide-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding-left: 250px;
+
+    .guide-aside {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      width: 250px;
+      height: 100%;
+      padding: 80px 15px 20px;
+      background-color: #ecf5ff;
+      overflow-y: auto;
+
+      .logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        width: 250px;
+        padding: 10px 15px 15px;
+
+        .h1 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 400;
+          padding: 10px 10px;
+          margin-bottom: 0;
+          text-align: center;
+          border-radius: 6px;
+          background-color: #0071f2;
+        }
+      }
+
+      .guide-gnb {
+        .li {
+          .tit {
+            font-size: 17px;
+            color: #0059bf;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            .span {
+              color: #0071f2;
+            }
+          }
+
+          .ul {
+            // @include flex($d: flex, $fd: column, $gap: 6px);
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #eaeff5;
+            background-color: #fff;
+
+            li,
+            a {
+              color: #333;
+              text-decoration: none;
+
+              &:hover {
+                color: #0071f2;
+              }
+            }
+          }
+
+          &:not(:first-child) {
+            margin-top: 14px; 
+          }
+        }
+      }
+
+      ul {
+        padding-left: 0;
+      }
+    }
+
+    .guide-content {
+      flex: 1;
+      padding: 30px 40px 40px;
+    }
+  }
+
+  .guide-tit1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .guide-tit2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 60px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .guide-tit3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 18px;
+  }
+
+  .guide-tit4 {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+
+    &::before {
+      content: '-';
+      margin-right: 4px;
+    }
+  }
+
+  .guide-txtBox {
+    padding: 14px;
+    margin: 14px 0;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+  }
+
+  .guideExBox {
+    padding: 14px;
+    margin: 14px 0;
+    border-radius: 6px;
+    border: 1px solid #f3f3f3;
+    background-color: #fff;
+  }
+}
