@@ -31,6 +31,16 @@ const guideRoutes = [
     component: () => import('@/views/guide/GuideButton.vue'),
   },
   {
+    path: '/guide/toggle',
+    name: 'toggle',
+    component: () => import('@/views/guide/GuideToggle.vue'),
+  },
+  {
+    path: '/guide/tabs',
+    name: 'tabs',
+    component: () => import('@/views/guide/GuideTabs.vue'),
+  },
+  {
     path: '/guide/etc',
     name: 'etc',
     component: () => import('@/views/guide/GuideEtc.vue'),

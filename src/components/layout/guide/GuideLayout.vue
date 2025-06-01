@@ -59,6 +59,18 @@
                 >
               </li>
               <li>
+                <router-link :to="{ name: 'tabs' }"
+                    >탭스
+                </router-link
+                >
+              </li>
+              <li>
+                <router-link :to="{ name: 'toggle' }"
+                    >토글
+                </router-link
+                >
+              </li>
+              <li>
                 <router-link :to="{ name: 'etc' }"
                     >기타
                 </router-link
