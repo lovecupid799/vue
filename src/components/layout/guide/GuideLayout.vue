@@ -38,13 +38,31 @@
               </p>
             <ul class="ul">
               <li>
-                타이틀
+                <router-link :to="{ name: 'text' }"
+                    >텍스트</router-link
+                >
               </li>
               <li>
-                폼요소
+                <router-link :to="{ name: 'list' }"
+                    >리스트</router-link
+                >
               </li>
               <li>
-                기타
+                <router-link :to="{ name: 'form' }"
+                    >폼요소</router-link
+                >
+              </li>
+              <li>
+                <router-link :to="{ name: 'button' }"
+                    >버튼
+                </router-link
+                >
+              </li>
+              <li>
+                <router-link :to="{ name: 'etc' }"
+                    >기타
+                </router-link
+                >
               </li>
             </ul>
           </li>
@@ -105,6 +123,7 @@
 </template>
 
 <style lang="scss">
-  @use "@/assets/scss/guide/guide";
+  @use "@/assets/scss/css" as *;
+  @use "@/assets/scss/guide/guide" as *;
 </style>
   

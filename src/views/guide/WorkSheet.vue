@@ -186,9 +186,321 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="hr">
+                    <tr class="hr" id="Menu1">
+                        <td></td>
+                        <td>Menu1</td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="hr" id="Menu2">
+                        <td></td>
+                        <td>Menu2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="hr" id="Menu3">
+                        <td></td>
+                        <td>Menu3</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -355,58 +667,6 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="hr" id="LANDING">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="PRODUCT">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                     <tr>
                         <td></td>
                         <td></td>
@@ -446,7 +706,20 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="hr" id="ORDER">
+                    <tr class="hr" id="Menu4">
+                        <td></td>
+                        <td>Menu4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><td></td>
+                        <td data-status=""></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -473,19 +746,6 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="FINANCE">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -537,20 +797,7 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="hr" id="RETURN">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="CLAIM">
+                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -576,111 +823,7 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr class="hr" id="BIZ">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="HELP">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="OMS">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="ADMIN">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td><td></td>
-                        <td data-status=""></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="hr" id="MAIL">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -731,17 +874,10 @@ import { ref, onMounted} from 'vue';
 
 const anchorList = ref([
   { id: 'COM', name: 'Common' },
-  { id: 'LANDING', name: 'Home Landing' },
-  { id: 'PRODUCT', name: 'Product' },
-  { id: 'ORDER', name: 'Order' },
-  { id: 'FINANCE', name: 'Finance' },
-  { id: 'RETURN', name: 'Return' },
-  { id: 'CLAIM', name: 'Claim' },
-  { id: 'BIZ', name: 'Biz Center' },
-  { id: 'HELP', name: 'Help Center' },
-  { id: 'OMS', name: 'OMS' },
-  { id: 'ADMIN', name: 'Admin' },
-  { id: 'MAIL', name: 'E-Mail' },
+  { id: 'Menu1', name: 'Menu1' },
+  { id: 'Menu2', name: 'Menu2' },
+  { id: 'Menu3', name: 'Menu3' },
+  { id: 'Menu4', name: 'Menu4' },
 ]);
 
 const menuSelectedIndex = ref(null);
@@ -781,226 +917,7 @@ const isScrollTop = window.scrollY;
 // });
 </script>
 
-<style scoped lang="scss">
-.work-tit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    font-weight: 700;
-    min-width: 1440px;
-    padding: 30px 10px 40px;
-    text-align: center;
-    .point {
-        display: inline-flex;
-        align-items: center;
-        color: #0071f2;
-        margin-right: 8px;
-    }
-    .logo {
-        margin-top: -8px;
-        margin-right: 4px;
-    }
-}
-
-.work-anchor {
-display: flex;
-justify-content: space-between;
-gap: 24px;
-// @include flex($jc:space-between, $gap: 24px);
-padding: 2px 10px;
-margin:0 -10px;
-text-align: right;
-background-color: #fff;
-.left {
-display: flex;
-align-items: center;
-gap: 8px;
-// @include flex($ai:center);
-.q-separator--vertical {
-  margin: 5px 10px;
-}
-.work-txt {
-  font-size: 13px;
-  color: #444;
-  margin: 0;
-}
-
-a {
-  &.btn-txt {
-    // @include flex($ai:center, $gap:4px);
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 13px;
-  }
-}
-}
-
-.right {
-// @include flex;
-display: flex;
-}
-
-.work-space {
-height: 16px;
-}
-
-.btn-anchor {
-display: inline-flex;
-font-size: 13px;
-color:#fff;
-padding: 0 5px;
-margin-bottom: 4px;
-border-radius: 3px;
-background-color: #00B3E3;
-&:not(:first-child) {
-  margin-left: 4px;
-}
-&.active {
-  background-color: #000;
-}
-}
-}
-
-.work-head {
-    position: sticky;
-    top: 0;
-    min-width: 1440px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #ccdae9;
-    overflow: hidden;
-    th {
-        font-size: 14px;
-        height: 40px;
-        text-align: center;
-    }
-}
-
-.workBody {
-    min-width: 1440px;
-    padding: 0 10px 10px;
-}
-
-.workTable {
-    display: block;
-    table {
-        table-layout: fixed;
-        width: 100%;
-        th,
-        td {
-            font-size: 14px;
-            font-weight: 400;
-            height: 40px;
-            padding: 10px;
-        }
-        thead {
-            th {
-                color: #fff;
-                text-align: center;
-                vertical-align: middle;
-                border: 0;
-                border-top: 2px solid #0958b5;
-                background-color: #086fe3;
-            }
-        }
-        tbody {
-            counter-reset: list-number;
-            tr {
-                td {
-                    font-weight: 400;
-                    vertical-align: middle;
-                    &:first-child {
-                        counter-increment: list-number;
-                        &:before {
-                            content: counter(list-number);
-                        }
-                    }
-                    &[data-status="완료"] {
-                        color: #7546e5;
-                    }
-                }
-                &.hr {
-                    td {
-                        border-top: 3px solid #cacaca;
-                    }
-                }
-                &.bg1 {
-                    background-color: #fbf8c5;
-                }
-                &.bg2 {
-                    background-color: #f1f1f1;
-                }
-            }
-            td {
-                border: 1px solid #e1e2e4;
-                &:nth-child(1),
-                &:nth-child(8),
-                &:nth-child(9),
-                &:nth-child(10) {
-                    text-align: center;
-                }
-                &:nth-child(2) {
-                    font-weight: bold;
-                }
-                &:nth-child(9) {
-                    color: #9a9a9a;
-                    a {
-                        color: #111;
-                    }
-                }
-                .etcTxt {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 7px;
-                    &:not(:first-child) {
-                        margin-top: 6px;
-                    }
-                }
-                .date {
-                    flex-shrink: 0;
-                    font-size: 13px;
-                    padding: 4px 6px;
-                    border-radius: 4px;
-                    background-color: #cfed90;
-                }
-                .date1 {
-                    flex-shrink: 0;
-                    font-size: 13px;
-                    padding: 4px 6px;
-                    border-radius: 4px;
-                    background-color: #ed9090;
-                }
-                .txt {
-                    display: inline-flex;
-                    align-items: center;
-                    min-height: 29px;
-                }
-                .link {
-                    &:focus {
-                        font-weight: 700;
-                    }
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-        &.is-hidden {
-            tbody {
-                tr {
-                    &.bg1 {
-                        td {
-                            display: none;
-                        }
-                    }
-                    &.bg2 {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
+<style lang="scss">
+  @use "@/assets/scss/guide/guide" as *;
 </style>
+  

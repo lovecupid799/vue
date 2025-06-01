@@ -13,11 +13,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/assets/scss/css";` // 전역 SCSS 파일
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `
+  //         @use "@/assets/scss/css" as *;
+  //         @use "@/assets/scss/guide/guide" as *;
+  //       `
+  //     },
+  //   },
+  // },
 })
