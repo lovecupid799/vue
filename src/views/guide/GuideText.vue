@@ -10,10 +10,9 @@
   </div>
 
   <h4 class="guide-tit3">타이틀 컴포넌트</h4>
-  <div class="guide-txtBox">
-    <ul class="ul">
-      <li></li>
-      <li></li>
-    </ul>
+  <div class="guide-box ">
+    <div class="guide-in">
+      <pub-title />
+    </div>
   </div>
 </template>

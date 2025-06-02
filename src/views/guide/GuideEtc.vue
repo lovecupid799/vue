@@ -16,4 +16,10 @@
       <li></li>
     </ul>
   </div>
+
+  <h3 class="guide-tit2">CHIPS</h3>
+  <h4 class="guide-tit3">타입 - 기본</h4>
+  <div class="guide-txtBox">
+    <pub-chips />
+  </div>
 </template>
