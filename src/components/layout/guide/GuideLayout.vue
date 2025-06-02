@@ -39,40 +39,40 @@
             <ul class="ul">
               <li>
                 <router-link :to="{ name: 'text' }"
-                    >텍스트</router-link
+                    >TEXT</router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'list' }"
-                    >리스트</router-link
+                    >LIST</router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'form' }"
-                    >폼요소</router-link
+                    >FORMS</router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'button' }"
-                    >버튼
+                    >BUTTON
                 </router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'tabs' }"
-                    >탭스
+                    >TABS
                 </router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'toggle' }"
-                    >토글
+                    >COLLAPSE
                 </router-link
                 >
               </li>
               <li>
                 <router-link :to="{ name: 'etc' }"
-                    >기타
+                    >ETC
                 </router-link
                 >
               </li>
