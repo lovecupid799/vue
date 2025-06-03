@@ -4,7 +4,10 @@ import PubList from '../control/list/pubList.vue';
 import PubListItem from '../control/list/pubListItem.vue';
 import PubTabs from '../control/tabs/pubTabs.vue';
 import PubChips from '../control/chips/pubChips.vue';
+import PubChipsList from '../control/chips/pubChipsList.vue';
 import PubToggle from '../control/toggle/pubToggle.vue';
+import PubButton from '../control/button/pubButton.vue';
+import CntButton from '../control/button/pubButtonWrap.vue';
 
 export default {
   install(Vue) {
@@ -14,6 +17,9 @@ export default {
     Vue.component('pub-list-item', PubListItem);
     Vue.component('pub-tabs', PubTabs);
     Vue.component('pub-chips', PubChips);
+    Vue.component('pub-chips-list', PubChipsList);
     Vue.component('pub-toggle', PubToggle);
+    Vue.component('pub-button', PubButton);
+    Vue.component( 'pub-button-wrap', CntButton);
   },
 };

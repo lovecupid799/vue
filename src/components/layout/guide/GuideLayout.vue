@@ -39,7 +39,7 @@
             <ul class="ul">
               <li>
                 <router-link :to="{ name: 'text' }"
-                    >TEXT</router-link
+                    >TYPOGRAPHY</router-link
                 >
               </li>
               <li>
