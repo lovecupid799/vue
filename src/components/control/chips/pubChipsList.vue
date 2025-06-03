@@ -1,6 +1,6 @@
 <template>
-  <div class="list-item">
-    <slot></slot>
+  <div class="chips-list">
+    chips
   </div>
 </template>
 

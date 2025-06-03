@@ -1,6 +1,6 @@
 <template>
   <ul class="list">
-    list
+    <slot></slot>
   </ul>
 </template>
 
