@@ -31,7 +31,7 @@
           :key="index">
           {{ item.name }}
         </pub-chips>
-      </pub-filter-tag>
+      </pub-chips-list>
       <br />
       <pub-chips-list>
         <pub-chips
@@ -58,7 +58,7 @@
           {{ item.name }}
         </pub-chips>
         <template #btn>
-          <nsp-btn class="btn-txt underline primary sm">reset<span class="ico-reset_skyblue_b i-12"></span></nsp-btn>
+          <button type="button" class="btn-txt underline primary sm">reset</button>
         </template>
       </pub-chips-list>
     </div>
