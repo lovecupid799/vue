@@ -25,21 +25,21 @@
   <h4 class="guide-tit3">타입 - 기본</h4>
    <div class="guide-exBox">
     <div class="in">
-      <pub-filter-tag>
-        <pub-filter-tag-item
+      <pub-chips-list>
+        <pub-chips
           v-for="(item, index) in filterList1"
           :key="index">
           {{ item.name }}
-        </pub-filter-tag-item>
+        </pub-chips>
       </pub-filter-tag>
       <br />
-      <pub-filter-tag>
-        <pub-filter-tag-item
+      <pub-chips-list>
+        <pub-chips
           v-for="(item, index) in filterList1b"
           :chip="item.delete"
           :key="index">
           {{ item.name }}
-        </pub-filter-tag-item>
+        </pub-chips>
         <template #btn>
           <button
             type="button"
@@ -48,19 +48,19 @@
             reset
           </button>
         </template>
-      </pub-filter-tag>
+      </pub-chips-list>
       <br />
-      <pub-filter-tag>
+      <pub-chips-list>
         <template #title>Selected Total <span class="num">0</span> </template>
-        <pub-filter-tag-item
+        <pub-chips
           v-for="(item, index) in filterList2"
           :key="index">
           {{ item.name }}
-        </pub-filter-tag-item>
+        </pub-chips>
         <template #btn>
           <nsp-btn class="btn-txt underline primary sm">reset<span class="ico-reset_skyblue_b i-12"></span></nsp-btn>
         </template>
-      </pub-filter-tag>
+      </pub-chips-list>
     </div>
     <div class="code">
       <pre>{{ ``}}</pre>
