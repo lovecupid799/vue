@@ -1,3 +1,9 @@
+/* **** 
+ * NAME : NSP-MIXIN CSS
+ * DATE : 2024.09.27
+ * AUTHOR : NSP-PUBLISH MEMBER
+ **** */
+
 @mixin flex($d: flex, $fd: row, $ai: null, $jc: null, $gap: null) {
   display: $d;
   flex-direction: $fd;
@@ -15,7 +21,7 @@
   }
 }
 
-@mixin hidden {
+@mixin blind {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +31,6 @@
   clip: rect(0, 0, 0, 0);
 }
 
-// 적용 시 display 속성 필수(block, inline-block)
 @mixin ellipsis($lines: 1) {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -42,19 +47,74 @@
 }
 
 @mixin scrollbar {
+  -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     width: 4px;
     margin-left: -4px;
-    background-color: transparent;
+    background-color: transparent; 
   }
 
   &::-webkit-scrollbar-thumb {
     width: 4px;
-    background: #d9d9d9;
+    background:#bbb;
     border-radius: 2px;
   }
 
   &::-webkit-scrollbar-button {
     display: none;
   }
+}
+
+@mixin scrollbar-x {
+  @include scrollbar;
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+@mixin font($value: null, $size: null) {
+  font-weight: 700;
+  font-family: "Samsung Sharp Sans";
+
+  @if($value != null) {
+    @if($value == "display1") {
+      font-size: 80px;
+    }
+    @else if($value == "display2") {
+      font-size: 60px;
+    }
+    @else if($value == "display3") {
+      font-size: 48px;
+    }
+    @else if($value == "display4") {
+      font-size: 38px;
+    }
+    @else if($value == "display5") {
+      font-size: 32px;
+    }
+    @else if($value == "display6") {
+      font-size: 24px;
+    }
+    @else if($value == "display7") {
+      font-size: 22px;
+      line-height: 30px;
+    }
+     @else if($value == "display7_1") {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    @else if($value == "display8") {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    @else if($value == "display9") {
+      font-size: 14px;
+    }
+  }
+
+  @else if($size != null) {
+    font-size:$size;
+  }
+
+  
 }
