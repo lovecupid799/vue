@@ -61,6 +61,136 @@ const props = defineProps({
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/scss/abstracts/_mixin.scss';
+
+/* **** title element **** */
+@at-root /* **** title **** */
+.h-tit,
+.h-tit1 {
+  @include font(display7);
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  .required {
+    color: #ef3434;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+
+  .small-txt {
+    margin-left: 16px;
+  }
+}
+
+.h-tit1 {
+  &::before {
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    align-self: center;
+    content: '';
+    margin-right: 12px;
+    background: #0b219e;
+  }
+}
+
+.h-tit2 {
+  @include font(display7_1);
+  margin-bottom: 20px;
+
+  .num {
+    color: #0b219e;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+}
+
+.h-tit3 {
+  @include font(display8);
+  margin-bottom: 16px;
+}
+
+.h-tit4 {
+  @include font(display9);
+  margin-bottom: 8px;
+}
+
+.h-tit-wrap {
+  @include flex($jc: space-between, $ai: flex-end);
+  gap: 16px;
+  margin-bottom: 24px;
+  .h-tit-wrap__right {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    .q-separator {
+      height: 20px;
+      margin: 6px 16px;
+      background: #aaa;
+      opacity: 1;
+    }
+    .nsp-btn {
+      + .nsp-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  [class^='h-tit'] {
+    margin-bottom: 0;
+  }
+
+  .small-txt {
+    font-size: 13px;
+    font-weight: 300;
+    color: #757575;
+
+    .q-separator {
+      display: inline-flex;
+      height: 20px;
+      margin: 0 16px;
+      vertical-align: text-top;
+    }
+  }
+
+  .form-check {
+    &.label-lg {
+      .form-check-label {
+        @include font(display7);
+      }
+    }
+  }
+
+  .h-tit1 {
+    &.total {
+      @include flex($jc: flex-start, $ai: center, $gap: 8px);
+
+      .num {
+        color: #0b219e;
+        font-family: Samsung Sharp Sans;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .t-left {
+    @include flex($d: inline-flex, $ai: center);
+    gap: 16px;
+  }
+
+  &.d-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    .small-txt {
+      padding-left: 16px;
+    }
+  }
+}
+
+/* **** title area **** */
 .h-tit-wrap {
   flex-wrap: wrap;
   gap: 8px 16px;
