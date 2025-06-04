@@ -32,7 +32,7 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/abstracts/_mixin.scss';
+@use '@/assets/scss/abstracts/_mixin.scss';
 .filter-result-wrap {
   .filter-list {
     > .list-in {
