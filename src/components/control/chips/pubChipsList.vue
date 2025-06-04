@@ -1,11 +1,11 @@
 <template>
-  <div class="filter-result-wrap">
+  <div class="chips-list-wrap">
     <div
       class="title"
       v-if="$slots.title">
       <slot name="title"></slot>
     </div>
-    <div class="filter-list">
+    <div class="chips-list">
       <div class="list-in">
         <div class="ul-wrap">
           <div class="chip-group">
@@ -32,9 +32,8 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/scss/abstracts/_mixin.scss';
-.filter-result-wrap {
-  .filter-list {
+.chips-list-wrap {
+  .chips-list {
     > .list-in {
       flex: 1;
       .chip-group {
@@ -58,33 +57,38 @@ const props = defineProps({
   }
 }
 
-.filter-result-wrap {
-  @include flex($d: flex, $jc: flex-start, $ai: flex-start, $gap: 16px);
+.chips-list-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
   width: 100%;
   margin: 0;
 
   .title {
-    @include flex($d: flex, $jc: flex-start, $ai: center, $gap: 8px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
     flex-shrink: 0;
-    color: var(--Primary-color-Black);
+    color: #000;
     font-size: 18px;
     font-weight: 700;
     line-height: 34px;
 
     .num {
-      color: var(--Primary-color-Skyblue);
+      color: #0b219e;
       font-style: normal;
       font-weight: 700;
     }
   }
 
-  .filter-list {
+  .chips-list {
     position: inherit;
     align-items: flex-start;
     max-height: 500px;
     overflow: hidden;
     overflow-y: auto;
-    @include scrollbar;
   }
 
   .btn-area {
@@ -104,16 +108,21 @@ const props = defineProps({
   }
 }
 
-.filter-list {
+.chips-list {
   position: relative;
-  @include flex($d: flex, $jc: flex-start, $ai: center);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex: 1;
   min-height: 34px;
   padding: 4px 16px;
   border-radius: 8px;
   background: #f7f7f7;
   > ul {
-    @include flex($d: flex, $jc: flex-start, $ai: center, $gap: 4px 16px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px 16px;
     flex: 1;
     flex-wrap: wrap;
     min-height: 20px;
@@ -157,7 +166,6 @@ const props = defineProps({
       flex-wrap: nowrap;
       height: 34px;
       overflow-x: auto;
-      @include scrollbar-x;
       &::after {
         content: '';
         flex-shrink: 0;
