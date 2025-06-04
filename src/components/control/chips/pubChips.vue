@@ -15,6 +15,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 const props = defineProps({
   chip: {
     type: Boolean,
@@ -28,6 +29,7 @@ chipDel.value = props.chip;
 const emits = defineEmits('click');
 
 const onClick = () => {
-  chipDel.value = !chipDel;
+  chipDel.value = !chipDel.value;
+  emits('click');
 };
 </script>

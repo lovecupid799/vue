@@ -53,12 +53,12 @@
       <pub-chips-list>
         <template #title>Selected Total <span class="num">0</span> </template>
         <pub-chips
-          v-for="(item, index) in filterList2"
+          v-for="(item, index) in filterList1a"
           :key="index">
           {{ item.name }}
         </pub-chips>
         <template #btn>
-          <button type="button" class="btn-txt underline primary sm">reset</button>
+          <button type="button" class="btn-txt underline primary sm" @click="onResetAllFilter">reset</button>
         </template>
       </pub-chips-list>
     </div>
@@ -68,6 +68,7 @@
   </div>
 </template>
 <script setup>
+import {ref, watch} from 'vue';
   //filter
 const filterList1 = ref([
   { id: 1, name: '필터명1' },
@@ -124,41 +125,6 @@ const filterList1b = ref([
   { id: 14, name: '필터명14', delete: true },
   { id: 15, name: '필터명15', delete: true },
   { id: 16, name: '필터명16', delete: true },
-]);
-
-const filterList2 = ref([
-  { id: 1, name: '필터명' },
-  { id: 2, name: '필터명' },
-  { id: 3, name: '필터명' },
-  { id: 4, name: '필터명' },
-  { id: 5, name: '필터명' },
-  { id: 6, name: '필터명' },
-  { id: 7, name: '필터명' },
-  { id: 8, name: '필터명' },
-  { id: 9, name: '필터명' },
-  { id: 10, name: '필터명' },
-  { id: 11, name: '필터명' },
-  { id: 12, name: '필터명' },
-  { id: 13, name: '필터명' },
-  { id: 14, name: '필터명' },
-  { id: 15, name: '필터명' },
-  { id: 16, name: '필터명' },
-  { id: 17, name: '필터명' },
-  { id: 18, name: '필터명' },
-  { id: 19, name: '필터명' },
-  { id: 20, name: '필터명' },
-  { id: 21, name: '필터명' },
-  { id: 22, name: '필터명' },
-  { id: 23, name: '필터명' },
-  { id: 24, name: '필터명' },
-  { id: 25, name: '필터명' },
-  { id: 26, name: '필터명' },
-  { id: 27, name: '필터명' },
-  { id: 28, name: '필터명' },
-  { id: 29, name: '필터명' },
-  { id: 30, name: '필터명' },
-  { id: 31, name: '필터명' },
-  { id: 32, name: '필터명' },
 ]);
 
 const onResetAllFilter = () => {

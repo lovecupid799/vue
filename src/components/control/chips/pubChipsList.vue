@@ -6,7 +6,7 @@
       <slot name="title"></slot>
     </div>
     <div class="chips-list">
-      <div class="list-in">
+      <div class="list-in" :class="{'scroll-x' : scroll}">
         <div class="ul-wrap">
           <div class="chip-group">
             <slot></slot>
