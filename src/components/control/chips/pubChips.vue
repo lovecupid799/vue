@@ -1,59 +1,33 @@
 <template>
-  <div class="filter-result-wrap">
-    <div
-      class="title"
-      v-if="$slots.title">
-      <slot name="title"></slot>
-    </div>
-    <div class="filter-list">
-      <div class="list-in">
-        <div class="ul-wrap">
-          <div class="chip-group">
-            <slot></slot>
-          </div>
-        </div>
-      </div>
-      <div
-        class="btn-area"
-        v-if="$slots.btn">
-        <slot name="btn"></slot>
-      </div>
-    </div>
+  <div
+    class="chips"
+    v-if="chipDel">
+    <span>
+      <slot></slot>
+    </span>
+    <button
+      type="button"
+      class="btn-ico"
+      @click="onClick">
+      <span>x</span>
+    </button>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  scroll: {
+  chip: {
     type: Boolean,
-    default: false,
+    default: true,
   },
 });
-</script>
 
-<style lang="scss" scoped>
-.filter-result-wrap {
-  .filter-list {
-    > .list-in {
-      flex: 1;
-      .chip-group {
-        display: inline-flex;
-        flex-wrap: wrap;
-        gap: 4px 16px;
-      }
-      &.scroll-x {
-        overflow: hidden;
-        overflow-x: auto;
-        .ul-wrap {
-          display: table;
-          table-layout: fixed;
-          width: 100%;
-        }
-        ul {
-          flex-wrap: nowrap;
-        }
-      }
-    }
-  }
-}
-</style>
+const chipDel = ref();
+chipDel.value = props.chip;
+
+const emits = defineEmits('click');
+
+const onClick = () => {
+  chipDel.value = !chipDel;
+};
+</script>
