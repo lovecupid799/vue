@@ -33,3 +33,9 @@ const onClick = () => {
   emits('click');
 };
 </script>
+
+<style scoped lang="scss">
+.chips {
+  white-space: nowrap;
+}
+</style>

@@ -33,6 +33,7 @@ const props = defineProps({
   },
 });
 </script>
+
 <style lang="scss" scoped>
 .nsp-card-prd {
   padding: 0;

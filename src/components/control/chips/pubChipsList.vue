@@ -49,7 +49,7 @@ const props = defineProps({
           table-layout: fixed;
           width: 100%;
         }
-        ul {
+        .chip-group {
           flex-wrap: nowrap;
         }
       }

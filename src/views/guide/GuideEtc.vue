@@ -61,6 +61,18 @@
           <button type="button" class="btn-txt underline primary sm" @click="onResetAllFilter">reset</button>
         </template>
       </pub-chips-list>
+      <br />
+      <pub-chips-list :scroll="true">
+        <template #title>Selected Total <span class="num">0</span> </template>
+        <pub-chips
+          v-for="(item, index) in filterList1a"
+          :key="index">
+          {{ item.name }}
+        </pub-chips>
+        <template #btn>
+          <button type="button" class="btn-txt underline primary sm" @click="onResetAllFilter">reset</button>
+        </template>
+      </pub-chips-list>
     </div>
     <div class="code">
       <pre>{{ ``}}</pre>
