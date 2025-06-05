@@ -4,6 +4,6 @@
  * Date : 2024.09.07
  */
 
-@forward "@/assets/scss/abstracts" as *;
-@forward "@/assets/scss/base" as *;
-@forward "@/assets/scss/components" as *;
+@use "@/assets/scss/abstracts" as *;
+@use "@/assets/scss/base";
+@use "@/assets/scss/components";
