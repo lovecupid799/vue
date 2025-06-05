@@ -6,9 +6,9 @@
     <div class="in">
       
     </div>
-    <div class="code">
-      <pre>{{ ``}}</pre>
-    </div>
+     <pub-code :id="`CODE-VIEW-TITLE`">
+          <pre>{{ ``}}</pre>
+    </pub-code>
   </div>
 
   <h3 class="guide-tit2">Text</h3>
