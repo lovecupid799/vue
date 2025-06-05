@@ -18,7 +18,6 @@ export default defineConfig({
       scss: {
         additionalData: `
           @use "@/assets/scss/css" as *;
-          @use "@/assets/scss/guide/guide" as *;
         `
       },
     },
