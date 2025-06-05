@@ -13,7 +13,7 @@ const router = createRouter({
     {
     path: '/worksheet',
     name: 'worksheet',
-    component: () => import('@/views/guideWorkSheet.vue'),
+    component: () => import('@/views/guide/WorkSheet.vue'),
   },
   ],
 })
