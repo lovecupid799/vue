@@ -918,6 +918,5 @@ const isScrollTop = window.scrollY;
 </script>
 
 <style lang="scss">
-  @use "@/assets/scss/guide/guide";
+   @use "@/assets/scss/guide/guide";
 </style>
-  
