@@ -11,7 +11,7 @@ const router = createRouter({
       children: guideRoutes,
     },
     {
-    path: '/worksheet',
+    path: '/guide/worksheet',
     name: 'worksheet',
     component: () => import('@/views/guide/WorkSheet.vue'),
   },
