@@ -135,7 +135,6 @@
 </template>
 
 <style lang="scss">
-  @use "@/assets/scss/css" as *;
-  @use "@/assets/scss/guide/guide" as *;
+  
 </style>
   
