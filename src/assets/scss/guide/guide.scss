@@ -437,6 +437,11 @@
     .q-separator--vertical {
       margin: 5px 10px;
     }
+
+    a + .work-txt {
+      margin-left: 10px;
+    }
+
     .work-txt {
       font-size: 13px;
       color: #444;

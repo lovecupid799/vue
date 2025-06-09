@@ -10,11 +10,7 @@
             <p class="tit"><span class="span">마크업</span> 정보</p>
             <ul class="ul">
               <li>
-                <router-link
-                    target="_blank"
-                    :to="{ name: 'worksheet' }"
-                    >퍼블 현황판</router-link
-                >
+                <router-link :to="{ name: 'worksheet' }">퍼블 현황판</router-link>
               </li>
               <li>
                 <router-link :to="{ name: 'rule' }"
