@@ -4,48 +4,40 @@
       <!-- gnb etc -->
       <div class="head-top">
         <div class="head-left">
-          <router-link :to="{ name: 'AD-U-0064M01' }">
+          <router-link :to="{ name: 'SampleTheme1' }">
             <h1 class="logo">
-              <img
+              <!-- <img
                 src="@/assets/images/common/head-logo.png"
-                alt="SPACE" />
-              <!-- OMS LOGO : <img  src="@/assets/images/common/head-oms-logo.png" alt="oms" /> -->
+                alt="SALES PORTAL" /> -->
+              <!-- OMS LOGO : <img  src="@/assets/images/common/head-oms-logo.png" alt="SALES PORTAL" /> -->
             </h1>
           </router-link>
           <!-- 법인사용자, Multi sold to를 가지고 있는 거래선이 들어왔을때 노출 -->
           <div class="head-select">
-            <nsp-select
+            <!-- <nsp-select
               class="nsp-select"
               :options="[{ 항목: 1 }, { 항목: 2 }]"
-              first-option="all" />
+              first-option="all" /> -->
           </div>
           <!-- //법인사용자, Multi sold to를 가지고 있는 거래선이 들어왔을때 노출 -->
         </div>
 
         <div class="head-etc">
-          <nsp-input
+          <!-- <nsp-input
             class="nsp-input-search"
             :maxlength="11"
-            :placeholder="'Search'">
+            :placeholder="'search'">
             <template #append>
               <q-icon>
                 <i class="ico-search_b i-16" />
               </q-icon>
             </template>
-          </nsp-input>
+          </nsp-input> -->
 
           <div class="head-btn">
-            <!-- inventory -->
-            <nsp-btn
-              class="btn-inve"
-              :title="'Availability Check'"
-              ><span class="ico"></span>
-            </nsp-btn>
-            <!-- //inventory -->
-
             <!-- cart -->
             <div class="btn-cart-wrap">
-              <nsp-btn class="btn-cart"
+              <!-- <nsp-btn class="btn-cart"
                 ><span class="ico"></span>
                 <sdl-badge
                   secondary
@@ -53,17 +45,17 @@
                   class="type-circle color1"
                   >0</sdl-badge
                 >
-              </nsp-btn>
+              </nsp-btn> -->
             </div>
             <!-- //cart -->
 
             <!-- favorite -->
             <div class="btn-like-wrap">
-              <nsp-btn
+              <!-- <nsp-btn
                 class="btn-like"
                 @click="favoToggleAct"
                 ><span class="ico"></span
-              ></nsp-btn>
+              ></nsp-btn> -->
               <div
                 v-if="favoToggle"
                 class="head-etc-layer">
@@ -88,8 +80,8 @@
                      -->
                   </div>
                   <div class="l-btn">
-                    <nsp-btn class="btn-fill sm">Add to Cart</nsp-btn>
-                    <nsp-btn class="btn-outline sm">Manage Favorite</nsp-btn>
+                    <!-- <nsp-btn class="btn-fill sm">Add to Cart</nsp-btn>
+                    <nsp-btn class="btn-outline sm">Manage Favorite</nsp-btn> -->
                   </div>
                 </div>
               </div>
@@ -98,28 +90,27 @@
 
             <!-- my -->
             <div class="btn-my-wrap">
-              <nsp-btn
+              <!-- <nsp-btn
                 class="btn-my"
                 @click="myToggleAct"
                 ><span class="ico"></span
-              ></nsp-btn>
+              ></nsp-btn> -->
               <div
                 v-if="myToggle"
                 class="head-etc-layer">
                 <div class="l-in">
                   <div class="l-tit">
-                    <h2 class="h-tit2">My Profile</h2>
+                    <h2 class="h-tit2">My Account</h2>
                   </div>
-                  <!-- <div class="l-body">
+                  <div class="l-body">
                     <ul class="l-list">
                       <li>
-                        <router-link :to="{ name: 'AD-U-0054M01' }">My Profile</router-link>
+                        <router-link :to="{ name: 'SampleTheme1' }">My Profile</router-link>
                       </li>
                     </ul>
-                  </div> -->
+                  </div>
                   <div class="l-btn">
-                    <nsp-btn class="btn-fill sm">Edit Profile</nsp-btn>
-                    <nsp-btn class="btn-outline sm">Logout</nsp-btn>
+                    <nsp-btn class="btn-fill sm">Logout</nsp-btn>
                   </div>
                 </div>
               </div>
@@ -128,7 +119,7 @@
 
             <!-- alarm -->
             <div class="btn-alarm-wrap">
-              <nsp-btn
+              <!-- <nsp-btn
                 class="btn-alarm"
                 @click="alarmToggleAct"
                 ><span class="ico"></span>
@@ -138,17 +129,17 @@
                   class="type-circle color1"
                   >4</sdl-badge
                 >
-              </nsp-btn>
+              </nsp-btn> -->
               <div
                 v-if="alarmToggle"
                 class="head-alarm-layer">
                 <div class="alarm-in">
                   <div class="alarm-tit">
                     <h2 class="h-tit2">Notifications<span class="num">125</span></h2>
-                    <nsp-btn class="btn-txt underline"
+                    <!-- <nsp-btn class="btn-txt underline"
                       >Mark all as read
                       <span class="ico-done i-12"></span>
-                    </nsp-btn>
+                    </nsp-btn> -->
                   </div>
                   <SdlTab
                     badge-count
@@ -159,7 +150,7 @@
                         <ul class="alarm-list">
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
@@ -182,15 +173,15 @@
                           <li class="alarm-li">
                             <!-- 개발 : 확인한 알람은 클래스 "alarm-read" 추가 -->
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item alarm-read">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >FINANCE</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">4 days ago</span>
@@ -204,7 +195,7 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
@@ -216,9 +207,9 @@
                                 </div>
                                 <div class="right">
                                   <span class="r-date">5 days ago</span>
-                                  <nsp-btn class="btn-ico r-del">
+                                  <!-- <nsp-btn class="btn-ico r-del">
                                     <span class="ico-circle-delete_red_b i-16"> </span>
-                                  </nsp-btn>
+                                  </nsp-btn> -->
                                 </div>
                               </div>
                               <div class="item-body"><strong class="text-bold">SO No. 1200977924</strong> has been <strong class="text-bold">order created</strong> on <strong class="text-bold">10/14/2024</strong></div>
@@ -226,15 +217,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >RETURN</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">5 days ago</span>
@@ -248,15 +239,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >Q&A</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">9 days ago</span>
@@ -270,15 +261,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >ORDER</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">11 days ago</span>
@@ -292,15 +283,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >FINANCE</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">12 days ago</span>
@@ -314,15 +305,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >ORDER</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">14 days ago</span>
@@ -342,15 +333,15 @@
                         <ul class="alarm-list">
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >ORDER</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">Yesterday</span>
@@ -364,15 +355,15 @@
                           </li>
                           <li class="alarm-li">
                             <router-link
-                              :to="{ name: 'AD-U-0064M01' }"
+                              :to="{ name: 'SampleTheme1' }"
                               class="alarm-item">
                               <div class="item-head">
                                 <div class="left">
-                                  <sdl-badge
+                                  <!-- <sdl-badge
                                     primary
                                     class="type-rect color5"
                                     >FINANCE</sdl-badge
-                                  >
+                                  > -->
                                 </div>
                                 <div class="right">
                                   <span class="r-date">4 days ago</span>
@@ -418,10 +409,8 @@
       </div>
       <!-- //gnb etc -->
 
-      <!-- gnbWrap :  -->
-      <nav
-        class="gnbWrap"
-        @mouseleave="navLeave">
+      <!-- gnbWrap -->
+      <nav class="gnbWrap">
         <ul class="gnb-nav">
           <li
             class="menu-item"
@@ -432,67 +421,42 @@
               type="button"
               class="menu-1depth"
               :class="{ on: menuSelectedIndex === index && menu.isNavOpen }"
-              @mouseover="navClick(menu, index, rootMenus)">
+              @click="navClick(menu, index, rootMenus)">
               {{ getLabel(menu) }}
             </button>
-            <template v-if="menu.type === 'vertical'">
-              <div
-                class="sub-nav-wrap vertical"
-                v-if="menuSelectedIndex === index && menu.isNavOpen && getSubmenu(menu.menuId).length">
-                <ul
-                  class="sub-nav"
-                  :style="`left:${subLeftValue[index]}px`">
-                  <li
-                    class="sub-item"
-                    v-for="submenu in getSubmenu(menu.menuId)"
-                    :key="submenu.menuId"
-                    :index="submenu.menuId">
-                    <h3 class="menu-2depth-vertical">
-                      <sdl-checkbox
-                        inline
-                        class="form-check-star" /><a href="javascript:">{{ getLabel(submenu) }}</a>
-                    </h3>
-                  </li>
-                </ul>
-              </div>
-            </template>
-            <template v-else>
-              <div
-                class="sub-nav-wrap"
-                :class="getSubmenu(menu.menuId).length < 4 ? 'sub-nav-auto' : 'sub-nav4'"
-                v-if="menuSelectedIndex === index && menu.isNavOpen && getSubmenu(menu.menuId).length">
-                <ul
-                  class="sub-nav"
-                  :style="`left:${subLeftValue[index]}px`">
-                  <li
-                    class="sub-item"
-                    v-for="submenu in getSubmenu(menu.menuId)"
-                    :key="submenu.menuId"
-                    :index="submenu.menuId">
-                    <template v-if="getSubmenu(submenu.menuId).length > 0">
-                      <h3 class="menu-2depth">{{ getLabel(submenu) }}</h3>
-                      <ul class="sub-list">
-                        <li
-                          class="li"
-                          v-for="item in getSubmenu(submenu.menuId)"
-                          :key="item.menuId">
-                          <sdl-checkbox
-                            inline
-                            class="form-check-star" /><a href="javascript:">{{ getLabel(item) }}</a>
-                        </li>
-                      </ul>
-                    </template>
-                    <template v-else>
-                      <a
-                        href="#"
-                        class="menu-2depth"
-                        >{{ getLabel(submenu) }}</a
-                      >
-                    </template>
-                  </li>
-                </ul>
-              </div>
-            </template>
+            <div
+              class="sub-nav-wrap"
+              v-if="menuSelectedIndex === index && menu.isNavOpen && getSubmenu(menu.menuId).length">
+              <ul class="sub-nav">
+                <li
+                  class="sub-item"
+                  v-for="submenu in getSubmenu(menu.menuId)"
+                  :key="submenu.menuId"
+                  :index="submenu.menuId">
+                  <template v-if="getSubmenu(submenu.menuId).length > 0">
+                    <h3 class="menu-2depth">{{ getLabel(submenu) }}</h3>
+                    <ul class="sub-list">
+                      <li
+                        class="li"
+                        v-for="item in getSubmenu(submenu.menuId)"
+                        :key="item.menuId">
+                        <!-- <sdl-checkbox
+                          inline
+                          class="form-check-star" /> -->
+                          <a href="javascript:">{{ getLabel(item) }}</a>
+                      </li>
+                    </ul>
+                  </template>
+                  <template v-else>
+                    <a
+                      href="#"
+                      class="menu-2depth"
+                      >{{ getLabel(submenu) }}</a
+                    >
+                  </template>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
@@ -502,11 +466,13 @@
   <div
     v-if="menuSelectedIndex !== null && dim"
     class="gnb-dim"
-    :class="{ off: gnbCloseValue }"></div>
+    :class="{ off: gnbCloseValue }"
+    @click="gnbDimAct"></div>
 </template>
 
 <script>
 import _ from 'lodash';
+import { ref } from 'vue';
 
 export default {
   setup() {
@@ -541,13 +507,13 @@ export default {
     return {
       pubMenus: [
         //Product
-        { menuLevel: 1, menuId: 'mL1', depth1: 'Catalog', labelJson: { ko_KR: 'Catalog' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 1, menuId: 'mL1', depth1: 'Catalog', labelJson: { ko_KR: 'Catalog' }, isNavOpen: false },
 
         // { menuLevel: 2, menuId: 'mL1L2-1', parentId: 'mL1', labelJson: { ko_KR: 'Normal Order' } },
         // { menuLevel: 3, menuId: 'mL1L2L3-1', parentId: 'mL1L2-1', labelJson: { ko_KR: 'Place Order' } },
 
         //Order
-        { menuLevel: 1, menuId: 'mL2', depth1: 'Order', labelJson: { ko_KR: 'Order' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 1, menuId: 'mL2', depth1: 'Order', labelJson: { ko_KR: 'Order' }, isNavOpen: false },
 
         { menuLevel: 2, menuId: 'mL2L2-1', parentId: 'mL2', labelJson: { ko_KR: 'Normal Order' } },
         { menuLevel: 3, menuId: 'mL2L2L3-1', parentId: 'mL2L2-1', labelJson: { ko_KR: 'Place Order' } },
@@ -581,7 +547,7 @@ export default {
         { menuLevel: 3, menuId: 'mL2L2L3-4', parentId: 'mL2L2-7', labelJson: { ko_KR: 'Seeding Order Report' } },
 
         //Sales Support
-        { menuLevel: 1, menuId: 'mL3', depth1: 'Sales Support', labelJson: { ko_KR: 'Sales Support' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 1, menuId: 'mL3', depth1: 'Sales Support', labelJson: { ko_KR: 'Sales Support' }, isNavOpen: false },
         { menuLevel: 2, menuId: 'mL3L2-1', parentId: 'mL3', labelJson: { ko_KR: 'Marketing Plan' } },
         { menuLevel: 3, menuId: 'mL3L2L3-1', parentId: 'mL3L2-1', labelJson: { ko_KR: 'Marketing Calendar' } },
         { menuLevel: 3, menuId: 'mL3L2L3-2', parentId: 'mL3L2-1', labelJson: { ko_KR: 'Promotion Plan' } },
@@ -602,7 +568,7 @@ export default {
         { menuLevel: 3, menuId: 'mL3L2L3-2', parentId: 'mL3L2-5', labelJson: { ko_KR: 'Contents Management' } },
 
         //Finance
-        { menuLevel: 1, menuId: 'mL4', depth1: 'Finance', labelJson: { ko_KR: 'Finance' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 1, menuId: 'mL4', depth1: 'Finance', labelJson: { ko_KR: 'Finance' }, isNavOpen: false },
         { menuLevel: 2, menuId: 'mL4L2-1', parentId: 'mL4', labelJson: { ko_KR: 'Credit' } },
         { menuLevel: 3, menuId: 'mL4L2L3-1', parentId: 'mL4L2-1', labelJson: { ko_KR: 'Credit Status' } },
         { menuLevel: 3, menuId: 'mL4L2L3-2', parentId: 'mL4L2-1', labelJson: { ko_KR: 'Credit Status - Subsidiary' } },
@@ -619,9 +585,9 @@ export default {
         { menuLevel: 3, menuId: 'mL4L2L3-7', parentId: 'mL4L2-2', labelJson: { ko_KR: 'A/R Balance Confirmation - Subsidiary' } },
 
         //Operation
-        { menuLevel: 1, menuId: 'mL5', depth1: 'Operation', labelJson: { ko_KR: 'Operation' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 1, menuId: 'mL5', depth1: 'Operation', labelJson: { ko_KR: 'Operation' }, isNavOpen: false },
 
-        { menuLevel: 2, menuId: 'mL5L2-1', parentId: 'mL5', labelJson: { ko_KR: 'Return' } },
+        { menuLevel: 2, menuId: 'mL5L2-2', parentId: 'mL5', labelJson: { ko_KR: 'Return' } },
         { menuLevel: 3, menuId: 'mL5L2L3-1', parentId: 'mL5L2-1', labelJson: { ko_KR: 'Return Overview' } },
         { menuLevel: 3, menuId: 'mL5L2L3-2', parentId: 'mL5L2-1', labelJson: { ko_KR: 'Return Request' } },
         { menuLevel: 3, menuId: 'mL5L2L3-3', parentId: 'mL5L2-1', labelJson: { ko_KR: 'Return Request List' } },
@@ -638,77 +604,56 @@ export default {
         { menuLevel: 3, menuId: 'mL5L2L3-3', parentId: 'mL5L2-3', labelJson: { ko_KR: 'Submitted Claim List' } },
 
         //Biz Center
-        { menuLevel: 1, menuId: 'mL6', depth1: 'Biz Center', labelJson: { ko_KR: 'Biz Center' }, isNavOpen: false, type: 'defalut' },
-        { menuLevel: 2, menuId: 'mL6L2-1', parentId: 'mL6', labelJson: { ko_KR: 'Maintain Call Transaction' } },
+        { menuLevel: 1, menuId: 'mL6', depth1: 'Biz Center', labelJson: { ko_KR: 'Biz Center' }, isNavOpen: false },
+        { menuLevel: 2, menuId: 'mL6L2-1', parentId: 'mL6', labelJson: { ko_KR: 'Biz Center' } },
         { menuLevel: 3, menuId: 'mL6L2L3-1', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Maintain Call Transaction' } },
         { menuLevel: 3, menuId: 'mL6L2L3-2', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Model & Inventory Available' } },
         { menuLevel: 3, menuId: 'mL6L2L3-3', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Order Tracking' } },
         { menuLevel: 3, menuId: 'mL6L2L3-4', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Call History By Home Delivery Order' } },
-
-        { menuLevel: 2, menuId: 'mL6L2-2', parentId: 'mL6', labelJson: { ko_KR: 'Pending/Open Call' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-1', parentId: 'mL6L2-2', labelJson: { ko_KR: 'Maintain Call Transaction' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-2', parentId: 'mL6L2-2', labelJson: { ko_KR: 'Model & Inventory Available' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-3', parentId: 'mL6L2-2', labelJson: { ko_KR: 'Order Tracking' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-4', parentId: 'mL6L2-2', labelJson: { ko_KR: 'Call History By Home Delivery Order' } },
-
-        { menuLevel: 2, menuId: 'mL6L2-3', parentId: 'mL6', labelJson: { ko_KR: 'Quarantine Event' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-1', parentId: 'mL6L2-3', labelJson: { ko_KR: 'Maintain Call Transaction' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-2', parentId: 'mL6L2-3', labelJson: { ko_KR: 'Model & Inventory Available' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-3', parentId: 'mL6L2-3', labelJson: { ko_KR: 'Order Tracking' } },
-
-        { menuLevel: 2, menuId: 'mL6L2-4', parentId: 'mL6', labelJson: { ko_KR: 'Damage Allowance List' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-1', parentId: 'mL6L2-4', labelJson: { ko_KR: 'Maintain Call Transaction' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-2', parentId: 'mL6L2-4', labelJson: { ko_KR: 'Model & Inventory Available' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-3', parentId: 'mL6L2-4', labelJson: { ko_KR: 'Order Tracking' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-4', parentId: 'mL6L2-4', labelJson: { ko_KR: 'Call History By Home Delivery Order' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-5', parentId: 'mL6L2-4', labelJson: { ko_KR: 'Change Order Addresses' } },
-
-        { menuLevel: 2, menuId: 'mL6L2-5', parentId: 'mL6', labelJson: { ko_KR: 'Report' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-1', parentId: 'mL6L2-5', labelJson: { ko_KR: 'Exception Report' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-2', parentId: 'mL6L2-5', labelJson: { ko_KR: 'DO Job ID Report' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-3', parentId: 'mL6L2-5', labelJson: { ko_KR: 'Return DO Tracking' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-4', parentId: 'mL6L2-5', labelJson: { ko_KR: 'DO Block Report' } },
-        { menuLevel: 3, menuId: 'mL6L2L3-5', parentId: 'mL6L2-5', labelJson: { ko_KR: 'DO Block Report' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-5', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Change Order Addresses' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-6', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Order Cancellation' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-7', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Damage Allowance' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-8', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Return Request' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-9', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Replacement Request' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-10', parentId: 'mL6L2-1', labelJson: { ko_KR: 'DO Block & Release' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-11', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Cancel In Transit' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-12', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Pending/Open Call' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-13', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Damage Allowance List' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-14', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Exception Report' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-15', parentId: 'mL6L2-1', labelJson: { ko_KR: 'DO Job ID Report' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-16', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Available Report' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-17', parentId: 'mL6L2-1', labelJson: { ko_KR: 'Quarantine Event' } },
+        { menuLevel: 3, menuId: 'mL6L2L3-18', parentId: 'mL6L2-1', labelJson: { ko_KR: 'DO Block Report' } },
 
         //Sales Insight
-        { menuLevel: 1, menuId: 'mL7', depth1: 'Sales Insight', labelJson: { ko_KR: 'Biz Insight' }, isNavOpen: false, type: 'defalut' },
-        { menuLevel: 2, menuId: 'mL7L2-1', parentId: 'mL7', labelJson: { ko_KR: 'Biz Insight' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Progress (Gross)' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Daily Order Status (Gross)' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Biz Analysis by Product' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Biz Analysis by Customer' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Detail' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Return' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-7', parentId: 'mL7L2-1', labelJson: { ko_KR: 'My Reports' } },
-
-        { menuLevel: 2, menuId: 'mL7L2-2', parentId: 'mL7', labelJson: { ko_KR: 'SPACE Performance' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Space Order' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Space Order For Company' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Visit status' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Visit status For Company' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Menu Usage' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Content Usage' } },
-
-        { menuLevel: 2, menuId: 'mL7L2-3', parentId: 'mL7', labelJson: { ko_KR: 'My Sales Activity' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-3', labelJson: { ko_KR: 'Manage Segment' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-3', labelJson: { ko_KR: 'Set My Sales Plan' } },
+        { menuLevel: 1, menuId: 'mL7', depth1: 'Sales Insight', labelJson: { ko_KR: 'Sales Insight' }, isNavOpen: false },
+        { menuLevel: 2, menuId: 'mL7L2-1', parentId: 'mL7', labelJson: { ko_KR: 'Sales Insight' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Progress' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Performance' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Daily Order Status' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Detail' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Performance' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Performance' } },
 
         //Help Center
-        { menuLevel: 1, menuId: 'mL8', depth1: 'Help Center', labelJson: { ko_KR: 'Help Center' }, isNavOpen: false, type: 'vertical' },
+        { menuLevel: 1, menuId: 'mL8', depth1: 'Help Center', labelJson: { ko_KR: 'Help Center' }, isNavOpen: false },
         { menuLevel: 2, menuId: 'mL8L2-1', parentId: 'mL8', labelJson: { ko_KR: 'Q&A' } },
-        // { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-1', labelJson: { ko_KR: 'Request Help' } },
-        // { menuLevel: 3, menuId: 'mL8L2L3-2', parentId: 'mL8L2-1', labelJson: { ko_KR: 'Q&A Detail' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-1', labelJson: { ko_KR: 'Request Help' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-2', parentId: 'mL8L2-1', labelJson: { ko_KR: 'Q&A Detail' } },
 
         { menuLevel: 2, menuId: 'mL8L2-2', parentId: 'mL8', labelJson: { ko_KR: 'FAQ' } },
-        // { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-2', labelJson: { ko_KR: 'FAQ' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-2', labelJson: { ko_KR: 'FAQ' } },
 
         { menuLevel: 2, menuId: 'mL8L2-3', parentId: 'mL8', labelJson: { ko_KR: 'Notice' } },
-        // { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-3', labelJson: { ko_KR: 'Notice Detail' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-3', labelJson: { ko_KR: 'Notice Detail' } },
+
+        { menuLevel: 2, menuId: 'mL8L2-4', parentId: 'mL8', labelJson: { ko_KR: 'VOC' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-1', parentId: 'mL8L2-4', labelJson: { ko_KR: 'Request VOC' } },
+        { menuLevel: 3, menuId: 'mL8L2L3-2', parentId: 'mL8L2-4', labelJson: { ko_KR: 'VOC Detail' } },
       ],
       menuSelectedIndex: null,
       dim: false,
       gnbCloseValue: false,
-      subLeftValue: [],
     };
   },
   computed: {
@@ -722,12 +667,6 @@ export default {
       return _.sortBy(this.pubMenus.filter(menu => menu.parentId === parentId));
     },
 
-    resizeSubLeftValue(index) {
-      let $depthItem = document.querySelectorAll('.gnbWrap .menu-1depth');
-      let _paddingLeft = parseInt(window.getComputedStyle($depthItem[index]).getPropertyValue('padding-left')) - 8;
-      this.subLeftValue[index] = $depthItem[index].offsetLeft - _paddingLeft;
-    },
-
     navClick(menu, index, rootMenus) {
       this.btnToggleClose();
       this.rootMenus = rootMenus.map((item, i) => {
@@ -738,19 +677,22 @@ export default {
         } else {
           item.isNavOpen = false;
         }
-      });
 
-      this.resizeSubLeftValue(index);
-      window.onresize = () => {
-        this.resizeSubLeftValue(index);
-      };
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('#header')) {
+            menu.isNavOpen = false;
+            this.dim = false;
+          }
+        });
+      });
     },
 
-    navLeave() {
-      this.dim = false;
-      this.rootMenus.map((item, i) => {
-        item.isNavOpen = false;
-      });
+    gnbDimAct() {
+      this.gnbCloseValue = true;
+      setTimeout(() => {
+        this.dim = false;
+        this.gnbCloseValue = false;
+      }, 500);
     },
 
     getLabel({ labelJson, label }) {

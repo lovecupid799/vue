@@ -78,17 +78,13 @@
           <tr id="COM">
             <td></td>
             <td>레이아웃</td>
-            <td>메인 레이아웃</td>
+            <td>테마1</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td>
-              <!-- <router-link
-                                target="_blank"
-                                :to="{ name: 'SampleMain' }"
-                                >샘플</router-link
-                            > -->
+              <router-link target="_blank" :to="{ name: 'SampleTheme1' }">테마1</router-link>
             </td>
             <td>홍길동</td>
             <td>24.00.00</td>
@@ -100,12 +96,12 @@
           <tr>
             <td></td>
             <td></td>
+            <td>테마2</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td><router-link target="_blank" :to="{ name: 'SampleTheme2' }">테마2</router-link></td>
             <td></td>
             <td data-status=""></td>
             <td></td>

@@ -10,3 +10,12 @@
     <pub-footer />
   </div>
 </template>
+
+<script setup>
+
+</script>
+
+<style lang="scss">
+// @use "@/assets/scss/theme/_country3101.scss";
+</style>
+

@@ -8,7 +8,6 @@
 @use "@/assets/scss/base" as *;
 @use "@/assets/scss/components" as *;
 @use "@/assets/scss/contents" as *;
-@use "layout.scss";
+@use "@/assets/scss/layout.scss";
 
-//theme
-@use "theme.scss";
+

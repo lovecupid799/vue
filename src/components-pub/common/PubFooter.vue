@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        dd
+        Footer
     </div>
 </template>
 

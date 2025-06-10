@@ -74,53 +74,6 @@
               </li>
             </ul>
           </li>
-          <!-- <li class="li">
-            <p class="tit">
-              <span class="span">SDL</span> 컴포넌트
-            </p>
-            <ul class="ul">
-              <li>
-                <router-link :to="{ name: 'button' }"
-                    >Button</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'form' }"
-                    >Form</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'grid' }"
-                    >Table(Grid)</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'carousel' }"
-                    >Carousel</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'search' }"
-                    >Search</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'tab' }"
-                    >Tab/Collapse/Tooltip</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'popup' }"
-                    >Popup</router-link
-                >
-              </li>
-              <li>
-                <router-link :to="{ name: 'etc' }"
-                    >Etc</router-link
-                >
-              </li>
-            </ul>
-          </li> -->
         </ul>
       </div>
       <div class="guide-content">

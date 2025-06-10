@@ -3,7 +3,7 @@
  * DATE : 2024.09.27
  * AUTHOR : NSP-PUBLISH MEMBER
  **** */
-
+@use "@/assets/scss/abstracts" as *;
 
 /* ** main variables ** */
 $border-color: var(--Grayscale-2_DD); 
@@ -461,11 +461,11 @@ $sub-txt-color: var(--Grayscale-7_55);
     }
 
     .q-carousel__prev-arrow .q-icon {
-      background-image: url(@/assets/images/icons/bold/ico-chevron-left_b_12.svg);
+      // background-image: url(@/assets/images/icons/bold/ico-chevron-left_b_12.svg);
     }
 
     .q-carousel__next-arrow .q-icon {
-      background-image: url(@/assets/images/icons/bold/ico-chevron-right_b_12.svg);
+      // background-image: url(@/assets/images/icons/bold/ico-chevron-right_b_12.svg);
     }
 
     .q-carousel__navigation {
@@ -668,7 +668,7 @@ $sub-txt-color: var(--Grayscale-7_55);
             .ico-minus_b {
               width: 8px !important;
               height: 1px !important;
-              @extend .ico-minus_red_b;
+              // @extend .ico-minus_red_b;
             }
           }
 
@@ -855,12 +855,12 @@ $sub-txt-color: var(--Grayscale-7_55);
       }
       &.fc-prev-button {
         .fc-icon-chevron-left {
-          @extend .ico-chevron-left_b;
+          // @extend .ico-chevron-left_b;
         }
       }
       &.fc-next-button {
         .fc-icon-chevron-right {
-          @extend .ico-chevron-right_b;
+          // @extend .ico-chevron-right_b;
         }
       }
     }

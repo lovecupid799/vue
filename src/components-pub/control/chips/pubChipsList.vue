@@ -23,6 +23,8 @@
 </template>
 
 <script setup>
+import { defineProps } from 'vue';
+
 const props = defineProps({
   scroll: {
     type: Boolean,

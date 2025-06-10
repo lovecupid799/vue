@@ -12,5 +12,9 @@
 </template>
 
 <script setup>
-import PubHeader from '@/components-pub/common/layouts/com/PubHeader3101.vue'; // pub-header
+import PubHeader from '@/components-pub/common/PubHeader3101.vue'; // pub-header
 </script>
+
+<style lang="scss">
+@use "@/assets/scss/theme/_country3101.scss";
+</style>

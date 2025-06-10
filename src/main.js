@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import PubComponents from '@/components/control/';
+import PubComponents from '@/components-pub/control/';
 
 const app = createApp(App)
 

@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "abstracts/_mixin.scss";
+@use "@/assets/scss/abstracts" as *;
 
 /* ****
  * NAME : NSP-LAYOUT CSS
@@ -199,49 +199,49 @@ header {
 
       .btn-inve {
         .ico {
-          @extend .ico-shopping-in_stock_b;
+          // @extend .ico-shopping-in_stock_b;
         }
       }
 
       .btn-eye-open {
         .ico {
-          @extend .ico-eye-open;
+          // @extend .ico-eye-open;
         }
       }
 
       .btn-eye-hide {
         .ico {
-          @extend .ico-eye-hide;
+          // @extend .ico-eye-hide;
         }
       }
 
       .btn-cart {
         .ico {
-          @extend .ico-cart_b;
+          // @extend .ico-cart_b;
         }
       }
 
       .btn-like {
         .ico {
-          @extend .ico-heart_unselect_b;
+          // @extend .ico-heart_unselect_b;
         }
       }
 
       .btn-my {
         .ico {
-          @extend .ico-user_b;
+          // @extend .ico-user_b;
         }
       }
 
       .btn-alarm {
         .ico {
-          @extend .ico-alarm_b;
+          // @extend .ico-alarm_b;
         }
       }
 
       .btn-ai {
         .ico {
-          background-image: url(@/assets/images/icons/bold/ico-ai_imsi.svg);
+          // background-image: url(@/assets/images/icons/bold/ico-ai_imsi.svg);
           background-size: 105%;
         }
       }
