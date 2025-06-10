@@ -1,0 +1,262 @@
+/* **** 
+ * NAME : North America CSS
+ * DATE : 2025.05.03
+ * AUTHOR : NSP-PUBLISH MEMBER
+ **** */
+
+//only north america
+[data-theme="3101"] {
+  /* **** MAIN **** */  
+  
+}
+
+/* **** publish test **** */
+.layout-3101 {
+  .main-marketing-calendar {
+    display: none;
+  }
+
+  /* ** header : 기존 마크업 유지 ** */
+  &.type1 {
+    #header {
+      border: 0;
+      .gnbWrap {
+        height: 36px;
+        padding: 0 8px;
+        margin-top: 0;
+        .gnb-nav {
+          .menu-item {
+            padding: 0;
+            .menu-1depth {
+              line-height: 36px;
+              color: var(--Primary-color-White);
+              height: 36px;
+              padding: 0 16px;
+              border: 0;
+              &::after {
+                display: none;
+              }
+              &.on,
+              &.is-active {
+                background-color: var(--Grayscale-8_31);
+              }
+            }
+          }
+        }
+  
+        .sub-nav {
+          .sub-list {
+            a {
+              &:hover {
+                font-weight: 600;
+                border: 0;
+              }
+            }
+            .li {
+                min-height: 24px;
+            }
+          }
+        }
+  
+        .sub-nav-wrap {
+          .menu-2depth {
+            font-size: 16px;
+            color: var(--Grayscale-8_31);
+            min-height: 24px;
+            border: 0;
+            a {
+              &:hover {
+                font-weight: 600;
+                border: 0;
+              }
+            }
+          }
+        }
+  
+        .sub-nav-wrap-vertical {
+          .sub-nav {
+            .menu-2depth-vertical {
+              font-size: 15px;
+              min-height: 24px;
+            }
+            .menu-2depth-vertical, 
+            .menu-2depth {
+              a {
+                &:hover {
+                  font-weight: 600;
+                  border: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 36px;
+        background-color: var(--Primary-color-Black);
+      }
+    }
+  }
+
+
+  /* ** header : 새로운 마크업 ** */
+  &.type2 {
+    #header {
+      border: 0;
+      .head-top {
+        .inner {
+          @include flex($jc:space-between);
+          padding: 0 24px;
+        }
+      }
+      .head-gnb {
+        position: relative;
+        height: 36px;
+        background-color: var(--Primary-color-Black);
+      }
+      .gnbWrap {
+        position: inherit;
+        height: 36px;
+        padding: 0 8px;
+        margin-top: 0;
+        .gnb-nav {
+          .menu-item {
+            padding: 0;
+            .menu-1depth {
+              line-height: 36px;
+              color: var(--Primary-color-White);
+              height: 36px;
+              padding: 0 16px;
+              border: 0;
+              &::after {
+                display: none;
+              }
+              &.on,
+              &.is-active {
+                background-color: var(--Grayscale-8_31);
+              }
+            }
+          }
+        }
+  
+        .sub-nav {
+          .sub-list {
+            a {
+              &:hover {
+                font-weight: 600;
+                border: 0;
+              }
+            }
+            .li {
+                min-height: 24px;
+            }
+          }
+        }
+  
+        .sub-nav-wrap {
+          .menu-2depth {
+            font-size: 16px;
+            color: var(--Grayscale-8_31);
+            min-height: 24px;
+            border: 0;
+            a {
+              &:hover {
+                font-weight: 600;
+                border: 0;
+              }
+            }
+          }
+        }
+  
+        .sub-nav-wrap-vertical {
+          .sub-nav {
+            .menu-2depth-vertical {
+              font-size: 15px;
+              min-height: 24px;
+            }
+            .menu-2depth-vertical, 
+            .menu-2depth {
+              a {
+                &:hover {
+                  font-weight: 600;
+                  border: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 36px;
+        background-color: var(--Primary-color-Black);
+      }
+    }
+
+    .gnbWrap {
+      position: inherit;
+
+      //기본
+      .sub-nav-wrap {
+        left: 0;
+        width: 100%;
+        min-width: inherit;
+        max-width: inherit;
+        background-color: var(--Primary-color-White);
+        overflow: hidden;
+        .sub-nav {
+          position: relative;
+          padding: 16px 24px 40px;
+        }
+        .sub-item {
+          width: 310px;
+          .sub-list {
+            .li {
+              width: 310px;
+            }
+          }
+        }
+        &.vertical {
+          .sub-nav {
+            @include flex($d:inline-flex, $fd:column, $gap: 12px);
+            .menu-2depth-vertical {
+              gap: 8px;
+              font-weight: 300;
+              &:hover {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        &:not(.vertical) {
+          .sub-nav {
+            margin: 0 auto;
+          }
+          &.sub-nav4 {
+            .sub-nav {
+              left:inherit !important;
+              width: 1440px;
+            }
+          }
+        }
+      }
+      //1단
+    
+      //4단
+
+    }
+  }
+}
