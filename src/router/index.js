@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import guideRoutes from '@/router/router-guide'
+import themeRoutes from '@/router/router-pub/router-theme';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
     name: 'worksheet',
     component: () => import('@/views/guide/WorkSheet.vue'),
   },
+     {
+      path: 'theme',
+      name: 'theme',
+      children: themeRoutes,
+    },
   ],
 })
 
