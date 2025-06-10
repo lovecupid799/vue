@@ -671,14 +671,27 @@ export default {
         { menuLevel: 3, menuId: 'mL6L2L3-5', parentId: 'mL6L2-5', labelJson: { ko_KR: 'DO Block Report' } },
 
         //Sales Insight
-        { menuLevel: 1, menuId: 'mL7', depth1: 'Sales Insight', labelJson: { ko_KR: 'Sales Insight' }, isNavOpen: false, type: 'defalut' },
-        { menuLevel: 2, menuId: 'mL7L2-1', parentId: 'mL7', labelJson: { ko_KR: 'Sales Insight' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Progress' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Performance' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Daily Order Status' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Detail' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Performance' } },
-        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Performance' } },
+        { menuLevel: 1, menuId: 'mL7', depth1: 'Sales Insight', labelJson: { ko_KR: 'Biz Insight' }, isNavOpen: false, type: 'defalut' },
+        { menuLevel: 2, menuId: 'mL7L2-1', parentId: 'mL7', labelJson: { ko_KR: 'Biz Insight' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Sales Progress (Gross)' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Daily Order Status (Gross)' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Biz Analysis by Product' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Biz Analysis by Customer' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Customer Detail' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-1', labelJson: { ko_KR: 'Return' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-7', parentId: 'mL7L2-1', labelJson: { ko_KR: 'My Reports' } },
+
+        { menuLevel: 2, menuId: 'mL7L2-2', parentId: 'mL7', labelJson: { ko_KR: 'SPACE Performance' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Space Order' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Space Order For Company' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-3', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Visit status' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-4', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Visit status For Company' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-5', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Menu Usage' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-6', parentId: 'mL7L2-2', labelJson: { ko_KR: 'Content Usage' } },
+
+        { menuLevel: 2, menuId: 'mL7L2-3', parentId: 'mL7', labelJson: { ko_KR: 'My Sales Activity' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-1', parentId: 'mL7L2-3', labelJson: { ko_KR: 'Manage Segment' } },
+        { menuLevel: 3, menuId: 'mL7L2L3-2', parentId: 'mL7L2-3', labelJson: { ko_KR: 'Set My Sales Plan' } },
 
         //Help Center
         { menuLevel: 1, menuId: 'mL8', depth1: 'Help Center', labelJson: { ko_KR: 'Help Center' }, isNavOpen: false, type: 'vertical' },
