@@ -1,0 +1,68 @@
+/* ********************
+ * NAME : FORMS CSS
+ * DATE : 2025.06.04
+ * AUTHOR : OHY
+ ******************** */
+
+@use "@/assets/scss/abstracts" as *;
+
+
+
+/* ** checkbox & radio common ** */
+.form-check-group {
+  @include flex;
+  gap: 4px 16px;
+
+  .form-check-inline,
+  .form-check {
+    margin: 0;
+  }
+
+  &:not(.column) {
+    flex-wrap: wrap;
+  }
+
+  &.column {
+    flex-direction: column;
+
+    .form-check {
+      display: flex;
+      margin-bottom: 0;
+      min-height: auto;
+
+      .form-check-input {
+        &[type=checkbox] {
+          float: none;
+          margin-left: 0;
+        }
+      }
+    }
+
+  }
+}
+
+/* ** checkbox ** */
+.form-check-star {
+  gap: 0 !important;
+  margin-right: 0;
+
+  .form-check-input {
+    &[type=checkbox] {
+      width: 12px;
+      height: 12px;
+      border: 0 !important;
+      background-color: transparent !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.49184 0.77813C5.68326 0.31176 6.29111 0.30328 6.49768 0.752692L6.50874 0.77813L7.83829 4.01543L11.3523 4.27099C11.8489 4.30713 12.0471 4.86804 11.7035 5.20451L11.6849 5.22201L11.6654 5.23907L8.97654 7.49493L9.81645 10.8873C9.93598 11.37 9.46523 11.7325 9.03837 11.5115L9.01671 11.4998L8.99514 11.487L6.00016 9.64218L3.00577 11.4868C2.58229 11.7481 2.09289 11.4098 2.17389 10.936L2.1785 10.9117L2.18412 10.8873L3.02379 7.49493L0.335591 5.23938C-0.0465519 4.91938 0.12167 4.34909 0.596695 4.27677L0.622435 4.27338L0.648295 4.27099L4.16229 4.01531L5.49184 0.77813Z' fill='%23AAAAAA'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:checked {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.49184 0.77813C5.68326 0.31176 6.29111 0.30328 6.49768 0.752692L6.50874 0.77813L7.83829 4.01543L11.3523 4.27099C11.8489 4.30713 12.0471 4.86804 11.7035 5.20451L11.6849 5.22201L11.6654 5.23907L8.97654 7.49493L9.81645 10.8873C9.93598 11.37 9.46523 11.7325 9.03837 11.5115L9.01671 11.4998L8.99514 11.487L6.00016 9.64218L3.00577 11.4868C2.58229 11.7481 2.09289 11.4098 2.17389 10.936L2.1785 10.9117L2.18412 10.8873L3.02379 7.49493L0.335591 5.23938C-0.0465519 4.91938 0.12167 4.34909 0.596695 4.27677L0.622435 4.27338L0.648295 4.27099L4.16229 4.01531L5.49184 0.77813Z' fill='%23FFA600'/%3E%3C/svg%3E%0A");
+      }
+      &:focus {
+        &:not(:disabled) {
+          border: none;
+        }
+      }
+    }
+  }
+}
