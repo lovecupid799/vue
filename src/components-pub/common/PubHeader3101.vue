@@ -58,7 +58,7 @@
                       :index="submenu.menuId"
                     >
                       <h3 class="menu-2depth-vertical">
-                        <sdl-checkbox inline class="form-check-star" /><a href="javascript:">{{
+                       <pub-checkbox inline class="form-check-star" /><a href="javascript:">{{
                           getLabel(submenu)
                         }}</a>
                       </h3>
@@ -99,7 +99,7 @@
                             v-for="item in getSubmenu(submenu.menuId)"
                             :key="item.menuId"
                           >
-                            <sdl-checkbox inline class="form-check-star" /><a href="javascript:">{{
+                            <pub-checkbox inline class="form-check-star" />{{
                               getLabel(item)
                             }}</a>
                           </li>
