@@ -5,8 +5,87 @@
  ******************** */
 
 
-:root {
-  --Primary-color-White : #fff;
-  --Primary-color-Black : #000;
-  --Grayscale-2_DD:#ddd;
+ :root {
+  /* Primary color */
+  --Primary-color-Black: #000;
+  --Primary-color-White: #fff;
+  --Primary-color-Skyblue: #0B219E;
+  --Primary-color-Skyblue-dark: #050f49;
+
+  /* Secondary color */
+  --Secondary-color-Coral: #ef3434;
+  --Secondary-color-Orange: #f66700;
+  --Secondary-color-Yellow: #FFA600;
+  --Secondary-color-Sea-Blue: #00b3e3;
+  --Secondary-color-Teal: #00838f;
+  --Secondary-color-th_bg: #e1e2e8;
+  --Secondary-color-acd_bg: #f4f5f8;
+  --Secondary-color-cont_bg: #FAFBFE;
+  --Secondary-color-na_01 : #EFF0F4;
+  --Secondary-color-table-selected: #DFE7FF;
+  --Secondary-color-table-hover: #E9F3FD;
+  --Secondary-color-total: #E3F6ED; 
+
+  /* Grayscale */
+  --Grayscale-0_F7: #f7f7f7;
+  --Grayscale-1_EE: #eee;
+  --Grayscale-2_DD: #ddd;
+  --Grayscale-3_BB: #bbb;
+  --Grayscale-4_AA: #aaa;
+  --Grayscale-5_8F: #8f8f8f;
+  --Grayscale-6_75: #757575;
+  --Grayscale-7_55: #555;
+  --Grayscale-8_31: #313131;
+  --Grayscale-9_1C: #1c1c1c;
+
+  /* Neutral color */
+  --Neutral-color-Neutral-blue: #EFF0F3;
+  --Neutral-color-Neutral-beige: #f7f5f2;
+  --Neutral-color-Neutral-orange: #fef6f3;
+  --Neutral-color-Neutral-pink: #f6f0f5;
+
+  /* popup dimd */
+  --popup-dimd: rgba(0, 0, 0, 0.7);
+
+  /* Hover */
+  --Check-hover-bg: rgba(0, 111, 242, 0.08);
+
+  /* Badge */
+  --Badge-color-1: #7546B8; 
+  --Badge-color-2: #EB3B5A;
+  --Badge-color-3: #0BA69F;
+  --Badge-color-4: #778CA3;
+  --Badge-color-5: #061C4C;
+  --Badge-color-6: #A5B1C2;
+  --Badge-color-7: #2D98DA;
+  --Badge-color-8: #3867D6;
+  --Badge-color-9: #DEA328;
+  --Badge-color-10: #324F72;
+
+  /* button */
+  --btn-color-1: #EFF0F3;
+  --btn-color-2: #94BBED;
+  --btn-color-3: #B7D6F9;
+
+  /* summary bg */
+  --Summary-bg-color-1: #E3F6ED;
+
+  /* schedule event color */
+  --Schedule-color-1: #75D1A3;
+  --Schedule-color-2: #E3F6ED;
+  --Schedule-color-3: #719FE1;
+  --Schedule-color-4: #E9F3FD;
+  --Schedule-color-5: #EB7E94;
+  --Schedule-color-6: #FBE0E5;
+  --Schedule-color-7: #5263BE;
+  --Schedule-color-8: #DFE7FF;
+  --Schedule-color-9: #EBB67E;
+  --Schedule-color-10: #F9EDE0;
+
+  /* status color */
+  --states-color-primary-primary-800: #393AAA;
+  --states-color-gray-grayblue-200: #EEF4FA;
+  --states-color-blue-blue-200: #CDD8FB;
+  --states-color-skyblue-skyblue-200: #CDE8FA;
+  --states-color-aqua-aqua-500 : #2BCBBA;
 }
