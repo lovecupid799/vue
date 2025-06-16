@@ -51,9 +51,7 @@
                     <h3 class="menu-2depth">{{ getLabel(submenu) }}</h3>
                     <ul class="sub-list">
                       <li class="li" v-for="item in getSubmenu(submenu.menuId)" :key="item.menuId">
-                        <!-- <sdl-checkbox
-                          inline
-                          class="form-check-star" /> -->
+                        <pub-checkbox inline class="form-check-star" />
                         <a href="javascript:">{{ getLabel(item) }}</a>
                       </li>
                     </ul>
