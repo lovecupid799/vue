@@ -7,7 +7,6 @@
 @use "@/assets/scss/abstracts" as *;
 
 
-
 /* ** checkbox & radio common ** */
 .form-check-group {
   @include flex;
@@ -87,7 +86,7 @@
     &[type='checkbox'] {
       flex-shrink: 0;
       border-radius: 50%;
-      --bs-form-check-bg-image: url(@/assets/images/icons/ico-check-white.svg);
+      --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
       border: 1px solid var(--Grayscale-7_55);
       cursor: pointer;
 
@@ -97,7 +96,7 @@
 
         &:hover:not(:disabled) {
           border: 0;
-          --bs-form-check-bg-image: url(@/assets/images/icons/ico-check-white.svg);
+          --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
           background-color: var(--Primary-color-Skyblue-dark);
         }
 
@@ -150,7 +149,7 @@
 
         &:checked {
           border: 1px solid var(--Primary-color-Skyblue);
-          --bs-form-check-bg-image: url(@/assets/images/icons/ico-check-white.svg);
+          --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
           background-size: 100%;
         }
 
