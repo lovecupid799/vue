@@ -12,12 +12,6 @@ export default {
   path: '/',
   name: 'publish',
   children: [
-    //publish views - guide layout
-    // {
-    //   path: 'worksheet',
-    //   name: 'worksheet',
-    //   component: () => import('@/views/_PubGuide/WorkSheet.vue'),
-    // },
     {
       path: 'guide',
       name: 'guide',
@@ -26,7 +20,6 @@ export default {
     },
     {
       path: 'theme',
-      name: 'theme',
       children: themeRoutes,
     },
   ],
