@@ -10,7 +10,7 @@ const themeRoutes = [
     component: () => import('@/components-pub/layouts/ThemeLayout.vue'),
     children: [
       {
-        path: 'SampleTheme1',
+        path: '/publish/theme/SampleTheme1',
         name: 'SampleTheme1',
         component: () => import('@/views/_PubSample/SampleTheme.vue'),
       },
@@ -21,7 +21,7 @@ const themeRoutes = [
     component: () => import('@/components-pub/layouts/ThemeLayout3101.vue'),
     children: [
       {
-        path: 'SampleTheme2',
+        path: '/publish/theme/SampleTheme2',
         name: 'SampleTheme2',
         component: () => import('@/views/_PubSample/SampleTheme.vue'),
       },
