@@ -4,7 +4,7 @@
       <!-- gnb etc -->
       <div class="head-top">
         <div class="head-left">
-          <router-link :to="{ name: 'SampleTheme1' }">
+          <router-link>
             <h1 class="logo">
               <!-- <img
                 style="height: 24px"

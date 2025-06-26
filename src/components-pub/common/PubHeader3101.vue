@@ -4,15 +4,15 @@
     <div class="head-top">
       <div class="inner">
         <div class="head-left">
-          <a href="#">
-             <h1 class="logo">
+          <router-link>
+            <h1 class="logo">
               <!-- <img
                 style="height: 24px"
                 src="data:image/png;base64,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"
                 alt="SPACE"
               /> -->
             </h1>
-          </a>
+          </router-link>
         </div>
 
         <div class="head-etc">오른쪽 메뉴</div>
