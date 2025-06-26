@@ -30,7 +30,7 @@ export default {
         {
           path: '/theme1',
           name: 'theme1',
-          component: () => import('@/views/_PubSample/SampleTheme.vue'),
+          component: () => import('@/views/_PubGuide/SampleTheme.vue'),
         },
       ],
     },
