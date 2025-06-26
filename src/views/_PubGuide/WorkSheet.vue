@@ -84,7 +84,7 @@
             <td></td>
             <td></td>
             <td>
-              <router-link target="_blank" :to="{ name: 'SampleTheme1' }">테마1</router-link>
+              <router-link target="_blank" :to="{ name: 'sampletheme1' }">테마1</router-link>
             </td>
             <td>홍길동</td>
             <td>24.00.00</td>
@@ -101,7 +101,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><router-link target="_blank" :to="{ name: 'SampleTheme2' }">테마2</router-link></td>
+            <td><router-link target="_blank" :to="{ name: 'sampletheme2' }">테마2</router-link></td>
             <td></td>
             <td data-status=""></td>
             <td></td>
