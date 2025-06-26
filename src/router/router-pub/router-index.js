@@ -20,6 +20,7 @@ export default {
     },
     {
       path: 'theme',
+      name: 'theme',
       children: themeRoutes,
     },
   ],
