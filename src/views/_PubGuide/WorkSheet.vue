@@ -115,7 +115,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><router-link target="_blank" :to="{ name: 'button' }">가이드</router-link></td>
             <td></td>
             <td data-status=""></td>
             <td></td>
