@@ -1,6 +1,6 @@
 /**
  * Name : publishing Router - Guide
- * Author : ohy 
+ * Author : ohy
  * Date : 2025.05.28
  */
 
@@ -40,11 +40,11 @@ const guideRoutes = [
     name: 'tabs',
     component: () => import('@/views/_PubGuide/GuideTabs.vue'),
   },
-  {
-    path: '/guide/etc',
-    name: 'etc',
-    component: () => import('@/views/_PubGuide/GuideEtc.vue'),
-  },
+  // {
+  //   path: '/guide/etc',
+  //   name: 'etc',
+  //   component: () => import('@/views/_PubGuide/GuideEtc.vue'),
+  // },
 ]
 
 export default guideRoutes

@@ -11,7 +11,7 @@ const themeRoutes = [
     children: [
       {
         path: '/theme1/sampletheme1',
-        name: 'SampleTheme1',
+        name: 'sampletheme1',
         component: () => import('@/views/_PubSample/SampleTheme.vue'),
       },
     ],
@@ -22,10 +22,15 @@ const themeRoutes = [
     children: [
       {
         path: '/theme2/sampletheme2',
-        name: 'SampleTheme2',
+        name: 'sampletheme2',
         component: () => import('@/views/_PubSample/SampleTheme.vue'),
       },
     ],
+  },
+  {
+    path: '/guide/etc',
+    name: 'etc',
+    component: () => import('@/views/_PubGuide/GuideEtc.vue'),
   },
 ];
 
