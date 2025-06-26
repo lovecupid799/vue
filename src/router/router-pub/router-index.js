@@ -23,5 +23,16 @@ export default {
       name: 'theme',
       children: themeRoutes,
     },
+    {
+      path: '/theme1',
+      component: () => import('@/components-pub/layouts/ThemeLayout.vue'),
+      children: [
+        {
+          path: '/theme1',
+          name: 'theme1',
+          component: () => import('@/views/_PubSample/SampleTheme.vue'),
+        },
+      ],
+    },
   ],
 };
