@@ -23,6 +23,20 @@
     <!-- gnbWrap :  -->
     <nav class="gnbWrap">
       <div class="gnb-in">
+        <div class="gnb-control">
+          <nsp-btn
+            v-if="showMenuLeft"
+            class="btn-gnb-arrow gnb-prev"
+            @click="onClickMenuLeft">
+            <span class="ico"></span>
+          </nsp-btn>
+          <nsp-btn
+            v-if="showMenuRight"
+            class="btn-gnb-arrow gnb-next"
+            @click="onClickMenuRight">
+            <span class="ico"></span>
+          </nsp-btn>
+        </div>
         <ul class="gnb-nav">
           <li
             class="menu-item"
@@ -885,11 +899,23 @@ export default {
       gnbCloseValue: false,
       subLeftValue: [],
       subEndValue: false,
+      menuHiddenIndex: -1,
+      menuWidth: 0,
     }
   },
   computed: {
     rootMenus() {
       return _.sortBy(this.pubMenus.filter((menu) => menu.menuLevel === 1))
+    },
+    showMenuLeft() {
+      return this.menuHiddenIndex > -1;
+    },
+    showMenuRight() {
+      console.log(`showMenuRight this.menuWidth [${this.menuWidth}]`);
+      if (this.menuWidth > 1440) {
+        return true;
+      }
+      return false;
     },
   },
   mounted() {},
@@ -974,6 +1000,40 @@ export default {
       this.alarmToggle = false
       this.myToggle = false
       this.favoToggle = false
+    },
+
+    onClickMenuLeft() {
+      if (this.menuHiddenIndex < 0) {
+        return;
+      }
+      let $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      $depthItem[this.menuHiddenIndex].hidden = false;
+      this.menuHiddenIndex--;
+      this.menuWidth = this.getMenuWidth();
+    },
+    onClickMenuRight() {
+      let $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      this.menuHiddenIndex++;
+      $depthItem[this.menuHiddenIndex].hidden = true;
+      this.menuWidth = this.getMenuWidth();
+    },
+    getMenuWidth() {
+      let menuWidth = 0;
+      const $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      $depthItem.forEach(item => {
+        menuWidth += item.hidden ? 0 : item.offsetWidth;
+      });
+      return menuWidth;
+    },
+    getRootMenuIndex(strMenuId) {
+      let index = -1;
+      for (let idx = 0; idx < this.rootMenus?.length; idx++) {
+        if (this.rootMenus[idx].menuId === strMenuId) {
+          index = idx;
+          break;
+        }
+      }
+      return index;
     },
   },
 }
