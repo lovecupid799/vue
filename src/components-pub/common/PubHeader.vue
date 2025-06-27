@@ -21,49 +21,65 @@
 
       <!-- gnbWrap -->
       <nav class="gnbWrap">
-        <ul class="gnb-nav">
-          <li
-            class="menu-item"
-            v-for="(menu, index) in rootMenus"
-            :key="menu.menuId"
-            :index="menu.menuId"
-          >
-            <button
-              type="button"
-              class="menu-1depth"
-              :class="{ on: menuSelectedIndex === index && menu.isNavOpen }"
-              @mouseover="navClick(menu, index, rootMenus)"
+        <div class="gnb-in">
+          <div class="gnb-control">
+            <nsp-btn
+              v-if="showMenuLeft"
+              class="btn-gnb-arrow gnb-prev"
+              @click="onClickMenuLeft">
+              <span class="ico"></span>
+            </nsp-btn>
+            <nsp-btn
+              v-if="showMenuRight"
+              class="btn-gnb-arrow gnb-next"
+              @click="onClickMenuRight">
+              <span class="ico"></span>
+            </nsp-btn>
+          </div>
+          <ul class="gnb-nav">
+            <li
+              class="menu-item"
+              v-for="(menu, index) in rootMenus"
+              :key="menu.menuId"
+              :index="menu.menuId"
             >
-              {{ getLabel(menu) }}
-            </button>
-            <div
-              class="sub-nav-wrap"
-              v-if="menuSelectedIndex === index && menu.isNavOpen && getSubmenu(menu.menuId).length"
-            >
-              <ul class="sub-nav">
-                <li
-                  class="sub-item"
-                  v-for="submenu in getSubmenu(menu.menuId)"
-                  :key="submenu.menuId"
-                  :index="submenu.menuId"
-                >
-                  <template v-if="getSubmenu(submenu.menuId).length > 0">
-                    <h3 class="menu-2depth">{{ getLabel(submenu) }}</h3>
-                    <ul class="sub-list">
-                      <li class="li" v-for="item in getSubmenu(submenu.menuId)" :key="item.menuId">
-                        <pub-checkbox inline class="form-check-star" />
-                        <a href="javascript:">{{ getLabel(item) }}</a>
-                      </li>
-                    </ul>
-                  </template>
-                  <template v-else>
-                    <a href="#" class="menu-2depth">{{ getLabel(submenu) }}</a>
-                  </template>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+              <button
+                type="button"
+                class="menu-1depth"
+                :class="{ on: menuSelectedIndex === index && menu.isNavOpen }"
+                @mouseover="navClick(menu, index, rootMenus)"
+              >
+                {{ getLabel(menu) }}
+              </button>
+              <div
+                class="sub-nav-wrap"
+                v-if="menuSelectedIndex === index && menu.isNavOpen && getSubmenu(menu.menuId).length"
+              >
+                <ul class="sub-nav">
+                  <li
+                    class="sub-item"
+                    v-for="submenu in getSubmenu(menu.menuId)"
+                    :key="submenu.menuId"
+                    :index="submenu.menuId"
+                  >
+                    <template v-if="getSubmenu(submenu.menuId).length > 0">
+                      <h3 class="menu-2depth">{{ getLabel(submenu) }}</h3>
+                      <ul class="sub-list">
+                        <li class="li" v-for="item in getSubmenu(submenu.menuId)" :key="item.menuId">
+                          <pub-checkbox inline class="form-check-star" />
+                          <a href="javascript:">{{ getLabel(item) }}</a>
+                        </li>
+                      </ul>
+                    </template>
+                    <template v-else>
+                      <a href="#" class="menu-2depth">{{ getLabel(submenu) }}</a>
+                    </template>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- //gnbWrap -->
     </div>
@@ -729,11 +745,23 @@ export default {
       menuSelectedIndex: null,
       dim: false,
       gnbCloseValue: false,
+      menuHiddenIndex: -1,
+      menuWidth: 0,
     }
   },
   computed: {
     rootMenus() {
       return _.sortBy(this.pubMenus.filter((menu) => menu.menuLevel === 1))
+    },
+    showMenuLeft() {
+      return this.menuHiddenIndex > -1;
+    },
+    showMenuRight() {
+      console.log(`showMenuRight this.menuWidth [${this.menuWidth}]`);
+      if (this.menuWidth > 1440) {
+        return true;
+      }
+      return false;
     },
   },
   mounted() {},
@@ -809,6 +837,40 @@ export default {
       this.alarmToggle = false
       this.myToggle = false
       this.favoToggle = false
+    },
+
+    onClickMenuLeft() {
+      if (this.menuHiddenIndex < 0) {
+        return;
+      }
+      let $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      $depthItem[this.menuHiddenIndex].hidden = false;
+      this.menuHiddenIndex--;
+      this.menuWidth = this.getMenuWidth();
+    },
+    onClickMenuRight() {
+      let $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      this.menuHiddenIndex++;
+      $depthItem[this.menuHiddenIndex].hidden = true;
+      this.menuWidth = this.getMenuWidth();
+    },
+    getMenuWidth() {
+      let menuWidth = 0;
+      const $depthItem = document.querySelectorAll('.gnb-nav .menu-item');
+      $depthItem.forEach(item => {
+        menuWidth += item.hidden ? 0 : item.offsetWidth;
+      });
+      return menuWidth;
+    },
+    getRootMenuIndex(strMenuId) {
+      let index = -1;
+      for (let idx = 0; idx < this.rootMenus?.length; idx++) {
+        if (this.rootMenus[idx].menuId === strMenuId) {
+          index = idx;
+          break;
+        }
+      }
+      return index;
     },
   },
 }
