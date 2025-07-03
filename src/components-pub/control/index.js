@@ -5,6 +5,7 @@ import PubList from '../control/list/pubList.vue'
 import PubListItem from '../control/list/pubListItem.vue'
 import PubTabs from '../control/tabs/pubTabs.vue'
 import PubChips from '../control/chips/pubChips.vue'
+import PubRadio from '../control/radio/pubRadio.vue'
 import PubChipsList from '../control/chips/pubChipsList.vue'
 import PubToggle from '../control/toggle/pubToggle.vue'
 import PubButton from '../control/button/pubButton.vue'
@@ -26,5 +27,6 @@ export default {
     Vue.component('pub-button', PubButton)
     Vue.component('pub-button-wrap', CntButton)
     Vue.component('pub-checkbox', CheckBox)
+    Vue.component('pub-radio', PubRadio)
   },
 }
