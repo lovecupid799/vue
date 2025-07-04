@@ -1,0 +1,95 @@
+<template>
+  <div class="top-option-area">
+    <!-- 리스트정렬 -->
+    <div class="sort-by">
+      <div class="label">Sort by :</div>
+      <nsp-select
+        class="nsp-select borderless"
+        :options="['Newest', 'Discount Amt High to Low', 'Top Selling', 'Alphabetical Ascesnding', 'Alphabetical Descending', 'Price High to Low', 'Price Low to High']"
+        :first-option="'Newest'" />
+    </div>
+    <!-- // 리스트정렬 -->
+
+    <nsp-separator vertical />
+    <div class="list-type">
+      <template
+        v-for="(item, index) in typeLists"
+        :key="index">
+        <nsp-btn
+          class="btn-ico"
+          :class="{ active: item.isActive }"
+          @click.stop="setActivate(item, index)">
+          <span
+            class="i-24"
+            :class="item.className"></span>
+        </nsp-btn>
+      </template>
+    </div>
+    <nsp-separator vertical />
+    <nsp-input
+      class="nsp-input-search"
+      :maxlength="11"
+      :placeholder="'Enter Model'">
+      <template #append>
+        <q-icon>
+          <i class="ico-search_b i-16" />
+        </q-icon>
+      </template>
+    </nsp-input>
+  </div>
+</template>
+
+<script setup>
+import { ref, reactive, computed, onMounted } from 'vue';
+
+const props = defineProps({
+  defaultType: { type: String, default: '' },
+});
+const openFiltered = ref(false);
+const emits = defineEmits(['changeType']);
+
+const typeLists = ref([
+  {
+    type: 'card',
+    className: 'ico-view-card',
+    isActive: true,
+  },
+  {
+    type: 'img',
+    className: 'ico-view-img',
+  },
+  {
+    type: 'list',
+    className: 'ico-view-list',
+  },
+]);
+
+const setActivate = (selected, index) => {
+  let activeFlag = false;
+  typeLists.value.map(item => {
+    item.isActive = false;
+    if (selected.type === item.type) {
+      item.isActive = true;
+      activeFlag = true;
+    } else {
+      if (!activeFlag) {
+      }
+    }
+    return item;
+  });
+
+  emits('changeType', selected.type);
+};
+
+onMounted(() => {
+  if (props.defaultType) {
+    typeLists.value.map(item => {
+      item.isActive = false;
+      if (props.defaultType === item.type) {
+        item.isActive = true;
+      }
+      return item;
+    });
+  }
+});
+</script>
