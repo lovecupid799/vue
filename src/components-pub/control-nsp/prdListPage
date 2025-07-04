@@ -1,0 +1,200 @@
+<template>
+  <!-- content -->
+  <nsp-page :crumb="breadcrumb">
+    <template #content-head>
+      <div class="outlet-deals-top">
+        <div class="outlet-deals-select">
+          <span class="label">Promotion</span>
+          <nsp-select
+            class="nsp-select"
+            :options="[{ 항목: 1 }, { 항목: 2 }]"
+            first-option="all" />
+        </div>
+      </div>
+    </template>
+
+    <div class="outlet-deals-body">
+      <!-- title -->
+      <outlet-prd-title
+        :outletPrdTheme="outletPrdTheme"
+        :outletPrdTitle="outletPrdTitle"></outlet-prd-title>
+      <!-- title -->
+
+      <div class="deals-list">
+        <!-- search area -->
+        <div class="deals-search-area">
+          <div class="left">
+            <div class="prd-select">
+              <span class="label">Product Type</span>
+              <nsp-select
+                class="nsp-select"
+                v-model="searchParams.modelList"
+                :options="searchOptions"
+                multiple
+                clearable
+                :confirmBtnShow="false"
+                :placeholder="'Select Procuct Type'" />
+            </div>
+          </div>
+
+          <div class="prd-filterd-option">
+            <outlet-option-top
+              :default-type="prdCardType"
+              @change-type="changeListType" />
+          </div>
+        </div>
+
+        <!-- //search area -->
+        <!-- filterd area -->
+        <div class="deals-filterd-option">
+          <outlet-filter-data />
+        </div>
+        <!-- //filterd area -->
+
+        <div class="deals-card-list-wrap">
+          <!-- product lists -->
+          <outlet-card-list>
+            <outlet-card
+              v-for="(card, index) in cardLists"
+              :card-theme="outletPrdTheme"
+              :card-type="prdCardType"
+              :card-unit="prdPriceUnit"
+              :card-img="card.imgSrc"
+              :card-desc="card.description"
+              :card-code="card.modelCode"
+              :card-sales="card.sales"
+              :card-qty="card.qty"
+              :card-price1="card.price1"
+              :card-price2="card.price2"
+              :key="index" />
+          </outlet-card-list>
+          <!--// product lists -->
+
+          <sdl-pagination
+            :current-page="gridPage.pageIndex"
+            :total-rows="gridPage.records"
+            :per-page="gridPage.pageSize"
+            @change="movePage">
+          </sdl-pagination>
+        </div>
+      </div>
+    </div>
+  </nsp-page>
+</template>
+
+<script setup>
+import _ from 'lodash';
+import { ref, reactive } from 'vue';
+import OutletPrdTitle from './components/OutletPrdTitle.vue';
+import OutletOptionTop from './components/OutletOptionTop.vue';
+import OutletFilterData from './components/OutletFilterData.vue';
+import OutletCard from './components/OutletCard.vue';
+import OutletCardList from './components/OutletCardList.vue';
+
+//Bread Crumb Data
+const breadcrumb = ref({
+  title: 'Special Deals',
+  list: [{ name: 'Outlet' }, { name: 'Special Deals' }],
+});
+
+//product theme
+const outletPrdTheme = ref(1);
+
+//product title
+const outletPrdTitle = ref({
+  cate: 'Instant Discount',
+  title: 'Big Screen, Bigger Savings -Up to 15% Off TVs!',
+  startDate: '08/15/2025',
+  endDate: '09/15/2025',
+});
+
+const prdCardType = ref('card'); // 카드형
+const changeListType = type => {
+  prdCardType.value = type;
+};
+
+//pagination
+const gridPage = ref({
+  pageIndex: 1,
+  pageSize: 20,
+  pageUnit: 0,
+  records: 100,
+  totalPage: 0,
+});
+
+function movePage(pageIndex) {
+  gridPage.value.pageIndex = pageIndex;
+}
+
+//product type -  multi select
+const searchParams = ref({
+  modelList: [],
+});
+
+const searchOptions = ['조회조건111', '조회조건222', '조회조건333', '조회조건444'];
+
+//card list
+const prdPriceUnit = ref('USD');
+const cardLists = ref([
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+  {
+    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
+    modelCode: 'QN55S95CAFXZA',
+    sales: 100,
+    qty: 200,
+
+    price1: '3,200.00',
+    price2: '1,920.00',
+  },
+]);
+</script>
