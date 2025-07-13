@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "abstracts/_mixin.scss";
+@use "@/assets/scss/abstracts" as *;
 
 /* ****
  * NAME : NSP-LAYOUT CSS

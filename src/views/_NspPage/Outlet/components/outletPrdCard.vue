@@ -140,7 +140,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import BundleItem from './OutletBundleItem.vue';
+// import BundleItem from './OutletBundleItem.vue';
 
 const props = defineProps({
   cardIndex: {

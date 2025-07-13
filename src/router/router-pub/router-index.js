@@ -7,6 +7,7 @@
 //publish
 import guideRoutes from '@/router/router-pub/router-guide';
 import themeRoutes from '@/router/router-pub/router-theme';
+import exRoutes from '@/router/router-pub/router-ex';
 
 export default {
   path: '/',
@@ -27,6 +28,12 @@ export default {
       path: 'theme',
       name: 'theme',
       children: themeRoutes,
+    },
+    {
+      path: 'ex',
+      name: 'ex',
+      component: () => import('@/components-pub/layouts/guide/GuideLayout.vue'),
+      children: exRoutes,
     },
   ],
 };
