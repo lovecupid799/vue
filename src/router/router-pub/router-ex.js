@@ -8,7 +8,7 @@ const exRoutes = [
   {
     path: '/outlet',
     name: 'outlet',
-    component: () => import('@/views/_NspPage/Outlet/outletPrdPage.vue'),
+    component: () => import('@/views/_NspPage/Outlet/OutletPrdPage.vue'),
   },
 ]
 
