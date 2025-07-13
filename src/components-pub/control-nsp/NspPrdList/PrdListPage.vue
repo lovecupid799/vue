@@ -5,10 +5,10 @@
       <div class="outlet-deals-top">
         <div class="outlet-deals-select">
           <span class="label">Promotion</span>
-          <nsp-select
+          <!-- <nsp-select
             class="nsp-select"
             :options="[{ 항목: 1 }, { 항목: 2 }]"
-            first-option="all" />
+            first-option="all" /> -->
         </div>
       </div>
     </template>
@@ -45,11 +45,6 @@
         </div>
 
         <!-- //search area -->
-        <!-- filterd area -->
-        <div class="deals-filterd-option">
-          <outlet-filter-data />
-        </div>
-        <!-- //filterd area -->
 
         <div class="deals-card-list-wrap">
           <!-- product lists -->
@@ -83,13 +78,10 @@
 </template>
 
 <script setup>
-import _ from 'lodash';
-import { ref, reactive } from 'vue';
-import OutletPrdTitle from './components/OutletPrdTitle.vue';
-import OutletOptionTop from './components/OutletOptionTop.vue';
-import OutletFilterData from './components/OutletFilterData.vue';
-import OutletCard from './components/OutletCard.vue';
-import OutletCardList from './components/OutletCardList.vue';
+import { ref} from 'vue';
+import OutletOptionTop from './PrdOptionTop.vue';
+import OutletCard from './PrdCard.vue';
+import OutletCardList from './PrdCardList.vue';
 
 //Bread Crumb Data
 const breadcrumb = ref({
@@ -200,7 +192,8 @@ const cardLists = ref([
 </script>
 
 <style lang="scss">
-/* **** 
+@use "@/assets/scss/abstracts" as *;
+/* ****
  * NAME : NSP-OUTLET PAGE CSS
  * DATE : 2025.06.30
  * AUTHOR : NSP-PUBLISH MEMBER
@@ -291,26 +284,14 @@ const cardLists = ref([
   line-height: 18px;
   margin-top: 12px;
   }
-} 
+}
 
 
 /* ** outlet list top ** */
 .deals-search-area {
-  @include flex($jc: space-between);
+  @include flex($jc: flex-start);
   padding: 20px 0;
-  .prd-select {
-    @include flex($ai: center, $gap: 16px);
-    .label {
-      font-size: 13px;
-      font-weight: 600;
-    }
-    .nsp-select {
-      width: 240px;
-      .q-field__control {
-        height: 36px;
-      }
-    }
-  }
+
   .prd-filterd-option {
     width: auto;
     margin-top: 0;
@@ -322,36 +303,17 @@ const cardLists = ref([
       }
     }
 
-    .nsp-input-search {
-      width: 248px;
-      .q-field__control {
-        height: 36px;
-        background: var(--Primary-color-White);
+    .list-type {
+      .btn-ico {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        border:1px solid red;
       }
     }
   }
 }
 
-.deals-filterd-option {
-  margin-bottom: 24px;
-  .filter-list {
-    padding: 8px 24px;
-    border-radius: 4px;
-    border: 1px solid var(--form-border-color);
-    background: var(--Secondary-color-cont_bg);
-  }
-
-  .btn-area {
-    .nsp-btn.primary.btn-txt{
-      line-height: 18px;
-      min-height: 18px;
-      .q-btn__content {
-        font-size: 12px;
-        font-weight: 600;
-      }
-    }
-  }
-}
 
 /* ** outlet list ** */
 .outlet-card-list {
@@ -363,7 +325,7 @@ const cardLists = ref([
 /* ** outlet card ** */
 .outlet-card {
   border-radius: 8px;
-  border: 1px solid var(--form-border-color);
+  border: 1px solid #ddd;
   .card-in {
     @include flex($fd: column, $jc: flex-start);
     height: 100%;
@@ -480,7 +442,7 @@ const cardLists = ref([
       position: relative;
       height: 98px;
       z-index: 1;
-      padding-left: 10px; 
+      padding-left: 10px;
       margin: 8px 0 16px;
       .mark-plus{
         top: 41px;
@@ -499,7 +461,7 @@ const cardLists = ref([
         height: 98px;
         border-radius: 8px;
         border: 1px solid #DDD;
-        background-color: var(--Primary-color-White);
+        background-color: white;
         overflow: hidden;
         &.show {
           height: auto;
@@ -510,7 +472,7 @@ const cardLists = ref([
         @include flex($fd: column, $jc: flex-start, $ai:flex-start);
         height: 98px;
         padding: 8px 12px 8px 16px;
-        
+
         .model {
           font-size: 15px;
           font-weight: 600;
@@ -521,7 +483,7 @@ const cardLists = ref([
           line-height: 20px;
         }
         + .bundle-price-item  {
-          border-top: 1px solid var(--form-border-color);
+          border-top: 1px solid #ddd;
         }
       }
     }
@@ -545,15 +507,15 @@ const cardLists = ref([
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    background-color: var(--Primary-color-Black);
-    @extend .ico-plus_wh_b;
+    background-color: #000;
+    // @extend .ico-plus_wh_b;
     background-size: 12px;
     background-repeat: no-repeat;
     background-position: center;
   }
   &:hover {
     .card-in {
-      border-color: var(--form-border-color);
+      border-color: #ddd;
     }
   }
 }
@@ -567,11 +529,11 @@ const cardLists = ref([
 }
 
 .outlet-card-img {
-  
+
 }
 
 .outlet-card-list {
-  
+
 }
 
 
@@ -598,7 +560,7 @@ const cardLists = ref([
       color: #777;
       font-weight: 400;
       text-decoration: line-through;
-    } 
+    }
     .price2 {
       font-weight: 600;
       em {
@@ -617,7 +579,7 @@ const cardLists = ref([
       }
       .price1 {
         font-size: 14px;
-      } 
+      }
       .price2 {
         font-size: 20px;
         line-height: 24px;
@@ -686,7 +648,7 @@ const cardLists = ref([
         }
         .ico-chevron-right_b {
           position: absolute;
-          top: 12px; 
+          top: 12px;
           right: 12px;
           z-index: 2;
         }
@@ -759,7 +721,7 @@ const cardLists = ref([
     .prd-tabs-menu {
       &.is-scroll {
         .prd-detail-tabs {
-          
+
         }
       }
     }
@@ -846,7 +808,7 @@ const cardLists = ref([
     > li {
       width: 240px;
       height: 180px;
-      text-align: center; 
+      text-align: center;
       background-color: #F5F5F5;
       img {
         width: auto;

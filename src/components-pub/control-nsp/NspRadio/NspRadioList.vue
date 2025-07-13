@@ -1,37 +1,13 @@
 <template>
-  <q-radio
-    ref="radioRef"
-    v-bind="styleClassAttrs"
-    :class="radioClass"
-    :model-value="modelValue"
-    :val="val"
-    :label="label"
-    :left-label="leftLabel"
-    :size="size"
-    :dense="isSearchContext || dense"
-    :checked-icon="checkedIcon"
-    :unchecked-icon="uncheckedIcon"
-    :disable="disable"
-    :tabindex="tabindex"
-    @update:model-value="$emit('update:modelValue', $event)">
-    <slot />
-  </q-radio>
+  <div></div>
 </template>
 
 <script>
-import useInheritAttrs from '../../composables/private/useInheritAttrs';
-import useSearchChild from '../../composables/private/useSearchChild';
-import useDense, { useDenseProps } from '../../composables/private/useDense';
-import useStretch, { useStretchProps } from '../../composables/private/useStretch';
-
 export default {
   name: 'NspRadio',
   inheritAttrs: false,
 
   props: {
-    ...useDenseProps,
-    ...useStretchProps,
-
     modelValue: {
       type: [String, Number, Boolean, Object],
       default: undefined,

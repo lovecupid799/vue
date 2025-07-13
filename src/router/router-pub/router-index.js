@@ -13,6 +13,11 @@ export default {
   name: 'publish',
   children: [
     {
+      path: '/worksheet',
+      name: 'worksheet',
+      component: () => import('@/views/_PubGuide/WorkSheet.vue'),
+    },
+    {
       path: 'guide',
       name: 'guide',
       component: () => import('@/components-pub/layouts/guide/GuideLayout.vue'),

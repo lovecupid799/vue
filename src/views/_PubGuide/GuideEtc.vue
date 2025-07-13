@@ -1,25 +1,17 @@
 <template>
   <h2 class="guide-tit1">ETC</h2>
-  <h3 class="guide-tit2">Badge</h3>
+  <h3 class="guide-tit2">List Type</h3>
   <h4 class="guide-tit3">타입 - 기본</h4>
    <div class="guide-exBox">
     <div class="in">
-      
+      <prd-list-page />
     </div>
     <div class="code">
       <pre>{{ ``}}</pre>
     </div>
   </div>
 
-  <h4 class="guide-tit3">타입 - 블릿</h4>
-   <div class="guide-exBox">
-    <div class="in">
-      
-    </div>
-    <div class="code">
-      <pre>{{ ``}}</pre>
-    </div>
-  </div>
+
 
   <h3 class="guide-tit2">CHIPS</h3>
   <h4 class="guide-tit3">타입 - 기본</h4>
@@ -81,7 +73,8 @@
 </template>
 <script setup>
 import {ref, watch} from 'vue';
-  //filter
+
+//filter
 const filterList1 = ref([
   { id: 1, name: '필터명1' },
   { id: 2, name: '필터명2' },

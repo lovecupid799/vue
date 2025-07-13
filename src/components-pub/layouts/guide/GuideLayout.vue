@@ -7,6 +7,14 @@
         </div>
         <ul class="guide-gnb">
           <li class="li">
+            <ul class="ul">
+              <li>
+                <router-link :to="{ name: 'exlist' }">예제 리스트</router-link>
+              </li>
+
+            </ul>
+          </li>
+          <li class="li">
             <p class="tit"><span class="span">마크업</span> 정보</p>
             <ul class="ul">
               <li>
@@ -86,4 +94,4 @@
 <style lang="scss">
    @use "@/assets/scss/guide/guide";
 </style>
-  
+

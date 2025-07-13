@@ -1,51 +1,29 @@
 <template>
   <div class="top-option-area">
-    <!-- 리스트정렬 -->
-    <div class="sort-by">
-      <div class="label">Sort by :</div>
-      <nsp-select
-        class="nsp-select borderless"
-        :options="['Newest', 'Discount Amt High to Low', 'Top Selling', 'Alphabetical Ascesnding', 'Alphabetical Descending', 'Price High to Low', 'Price Low to High']"
-        :first-option="'Newest'" />
-    </div>
-    <!-- // 리스트정렬 -->
-
-    <nsp-separator vertical />
     <div class="list-type">
       <template
         v-for="(item, index) in typeLists"
         :key="index">
-        <nsp-btn
+        <button type="button"
           class="btn-ico"
           :class="{ active: item.isActive }"
           @click.stop="setActivate(item, index)">
           <span
             class="i-24"
             :class="item.className"></span>
-        </nsp-btn>
+        </button>
       </template>
     </div>
-    <nsp-separator vertical />
-    <nsp-input
-      class="nsp-input-search"
-      :maxlength="11"
-      :placeholder="'Enter Model'">
-      <template #append>
-        <q-icon>
-          <i class="ico-search_b i-16" />
-        </q-icon>
-      </template>
-    </nsp-input>
   </div>
 </template>
 
 <script setup>
-import { ref, reactive, computed, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const props = defineProps({
   defaultType: { type: String, default: '' },
 });
-const openFiltered = ref(false);
+
 const emits = defineEmits(['changeType']);
 
 const typeLists = ref([
@@ -73,6 +51,7 @@ const setActivate = (selected, index) => {
       activeFlag = true;
     } else {
       if (!activeFlag) {
+        console.log(index);
       }
     }
     return item;

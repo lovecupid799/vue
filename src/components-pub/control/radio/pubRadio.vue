@@ -9,7 +9,7 @@
       v-model="checked"
       @change="updateCheckValue"
     />
-    <label :class="labelClass" :for="id"><slot></slot></label>
+  <label :class="labelClass" :for="id"><slot></slot></label>
   </div>
 </template>
 

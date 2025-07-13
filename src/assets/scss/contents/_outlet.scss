@@ -1,9 +1,9 @@
-/* **** 
+/* ****
  * NAME : NSP-OUTLET PAGE CSS
  * DATE : 2025.06.30
  * AUTHOR : NSP-PUBLISH MEMBER
  **** */
-
+@use "@/assets/scss/abstracts" as *;
 
 
 /* **** PRODUCT LIST **** */
@@ -26,7 +26,7 @@
   line-height: 18px;
   margin-top: 12px;
   }
-} 
+}
 
 
 /* ** outlet list top ** */
@@ -118,7 +118,7 @@
     img {
       width: 100%;
     }
-    
+
   }
 
   .card-body {
@@ -177,7 +177,7 @@
       margin-top: 4px;
     }
     .prd-price-area {
-      margin-top: 4px; 
+      margin-top: 4px;
       .price-info {
         justify-content: flex-end;
       }
@@ -199,7 +199,7 @@
         display: none;
       }
     }
-    
+
     .btn-ico {
       position: absolute;
       .ico-chevron-up, .ico-chevron-down {
@@ -226,7 +226,7 @@
       .price-info {
         flex: 1;
       }
-      
+
       .model {
         font-size: 15px;
         font-weight: 600;
@@ -254,7 +254,7 @@
         // outline: 1px solid #4B7BEC;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
       }
-      
+
       // .btn-bundle-toggle {
       //   .ico-chevron-up {
       //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19.6621 16.3143L11.9994 8.53725L4.33686 16.3143L2.91211 14.9105L11.9994 5.6875L21.0869 14.9105L19.6621 16.3143Z' fill='%234B7BEC'/%3E%3C/svg%3E");
@@ -348,7 +348,7 @@
         margin-top: -10px;
         border-radius: 50px;
         background-color: var(--Primary-color-Black);
-        @extend .ico-plus_wh_b;
+        // @extend .ico-plus_wh_b;
         background-size: 12px;
         background-repeat: no-repeat;
         background-position: center;
@@ -411,7 +411,7 @@
   &.type-bundle {
     height:634px;
     .bundle-in {
-      padding-left: 10px; 
+      padding-left: 10px;
       &::before {
         @include flex($jc:center, $ai:center);
         position: absolute;
@@ -422,7 +422,7 @@
         height: 20px;
         border-radius: 50px;
         background-color: var(--Primary-color-Black);
-        @extend .ico-plus_wh_b;
+        // @extend .ico-plus_wh_b;
         background-size: 12px;
         background-repeat: no-repeat;
         background-position: center;
@@ -443,7 +443,7 @@
     }
   }
 }
-  
+
 //card type : img
 .outlet-card-img {
   .card-in {
@@ -455,7 +455,7 @@
   }
   .card-im {
     width: 150px;
-    height: 150px; 
+    height: 150px;
   }
   .card-body {
     align-items: center;
@@ -491,10 +491,10 @@
       font-size: 20px;
       line-height: 28px;
     }
-    
+
     .limited {
       position: absolute;
-      right: 24px; 
+      right: 24px;
       top: 24px;
     }
   }
@@ -507,7 +507,7 @@
     .card-in {
       height: 228px;
     }
-    
+
     .card-im {
       width: 112px;
       height: 112px;
@@ -588,7 +588,7 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-      
+
       .bundle-price-ul {
         width: 452px;
         height: 160px;
@@ -650,7 +650,7 @@
         }
       }
     }
-    
+
     .card-btm {
       flex-direction: column;
       gap: 14px;
@@ -673,12 +673,12 @@
       gap: 8px;
     }
   }
-  &:not(.type-bundle) { 
+  &:not(.type-bundle) {
     .card-in {
       height: 62px
     }
     .card-body {
-      gap: 32px; 
+      gap: 32px;
     }
     .card-info {
       flex-direction: row;
@@ -696,7 +696,7 @@
         width: 470px;
       }
     }
-    .card-btm { 
+    .card-btm {
       justify-content: flex-end;
       gap: 32px;
       flex: 1;
@@ -710,7 +710,7 @@
         .text-badge {
           font-size: 12px;
           margin-right: 8px;
-        } 
+        }
         .badge {
           font-size: 12px;
           line-height: 24px;
@@ -747,13 +747,13 @@
       }
     }
   }
-  &.type-bundle { 
+  &.type-bundle {
     .card-in {
       height: 120px;
       padding: 3px 11px;
     }
     .card-body {
-      gap: 24px; 
+      gap: 24px;
     }
     .card-info {
       width: 410px;
@@ -812,7 +812,7 @@
           height: 20px;
           border-radius: 50px;
           background-color: var(--Primary-color-Black);
-          @extend .ico-plus_wh_b;
+          // @extend .ico-plus_wh_b;
           background-size: 12px;
           background-repeat: no-repeat;
           background-position: center;
@@ -834,10 +834,10 @@
           }
         }
       }
-  
+
       &.on {
         .bundle-in {
-          &::before { 
+          &::before {
             z-index: 3;
           }
           .btn-ico {
@@ -854,7 +854,7 @@
         }
       }
     }
-    
+
     .card-btm {
       align-items: center;
       flex: 1;
@@ -932,7 +932,7 @@
 
     .cart-item {
       @include flex ($ai: center, $gap: 24px);
-      height: 76px; 
+      height: 76px;
       padding: 8px 16px;
       border-radius: 8px;
       border: 1px solid #DDD;
@@ -996,7 +996,7 @@
       .nsp-counter {
         margin: 0 8px 0 24px;
       }
-      
+
       .btn-ico.del {
         margin-left:  auto;
       }
@@ -1052,7 +1052,7 @@
       color: #777;
       font-weight: 400;
       text-decoration: line-through;
-    } 
+    }
     .price2 {
       font-weight: 600;
       em {
@@ -1071,7 +1071,7 @@
       }
       .price1 {
         font-size: 14px;
-      } 
+      }
       .price2 {
         font-size: 20px;
         line-height: 24px;
@@ -1139,7 +1139,7 @@
         }
         .ico-chevron-right_b {
           position: absolute;
-          top: 12px; 
+          top: 12px;
           right: 12px;
           z-index: 2;
         }
@@ -1299,7 +1299,7 @@
     > li {
       width: 240px;
       height: 180px;
-      text-align: center; 
+      text-align: center;
       background-color: #F5F5F5;
       img {
         width: auto;

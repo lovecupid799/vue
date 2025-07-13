@@ -116,8 +116,8 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch, inject, reactive } from 'vue';
-import BundleItem from './OutletBundleItem.vue';
+import { ref,  } from 'vue';
+// import BundleItem from './OutletBundleItem.vue';
 
 const props = defineProps({
   cardTheme: {

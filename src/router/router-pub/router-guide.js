@@ -6,6 +6,11 @@
 
 const guideRoutes = [
   {
+    path: '/',
+    name: 'exlist',
+    component: () => import('@/views/_PubGuide/GuideExList.vue'),
+  },
+  {
     path: '/guide/rule',
     name: 'rule',
     component: () => import('@/views/_PubGuide/GuideRule.vue'),
