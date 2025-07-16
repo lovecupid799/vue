@@ -213,3 +213,14 @@
     }
   }
 }
+
+
+/* ** radio ** */
+.form-radio {
+  &:checked {
+    border: 1px solid blue;
+    ~ label {
+      border: 1px solid blue;
+    }
+  }
+}

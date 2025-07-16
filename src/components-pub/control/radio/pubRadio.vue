@@ -13,63 +13,58 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { uniqueId } from 'lodash'
+import { ref, computed, defineProps, defineEmits, onMounted, watch } from 'vue'
 
-export default {
-  props: {
+const props = defineProps({
     inline: Boolean,
     modelValue: [String, Object],
     value: String,
     disabled: Boolean,
     labelClass: { type: String, default: 'form-check-label' },
-  },
-  data() {
-    return {
-      formClass: 'form-check',
-      id: uniqueId('sdl-check-box'),
-      checked: '',
-      checkList: [],
+});
+
+const formClass = ref('form-check');
+const id = uniqueId('sdl-check-box');
+const checked = ref('');
+const checkList = ref([]);
+
+const setFormClass = computed(() =>{
+  if (props.inline) return formClass.value + ' form-check-inline'
+  return props.formClass
+});
+
+const emit = defineEmits(['update:modelValue']);
+const updateCheckValue = (event) => {
+  if ('object' === typeof props.modelValue) {
+    checkList.value = props.modelValue
+    if (props.checked) {
+      checkList.value.push(event.target.value)
+    } else {
+      checkList.value.splice(props.checkList.indexOf(event.target.value), 1)
     }
-  },
-  emits: ['update:modelValue'],
-  computed: {
-    setFormClass: function () {
-      if (this.inline) return this.formClass + ' form-check-inline'
-      return this.formClass
-    },
-  },
-  methods: {
-    updateCheckValue: function (event) {
-      if ('object' === typeof this.modelValue) {
-        this.checkList = this.modelValue
-        if (this.checked) {
-          this.checkList.push(event.target.value)
-        } else {
-          this.checkList.splice(this.checkList.indexOf(event.target.value), 1)
-        }
-        this.$emit('update:modelValue', this.checkList)
-      } else {
-        this.$emit('update:modelValue', this.checked ? event.target.value : '')
-      }
-    },
-    syncValue() {
-      if ('object' === typeof this.modelValue) {
-        if (this.modelValue.includes(this.value)) this.checked = true
-        else this.checked = false
-      } else {
-        if (this.modelValue === this.value) this.checked = true
-        else this.checked = false
-      }
-    },
-  },
-  watch: {
-    modelValue() {
-      this.syncValue()
-    },
-  },
-  mounted() {
-    this.syncValue()
-  },
-}
+    emit('update:modelValue', checkList.value)
+  } else {
+    emit('update:modelValue', checked.value ? event.target.value : '')
+  }
+};
+
+const syncValue = () =>{
+  if ('object' === typeof props.modelValue) {
+    if (props.modelValue.includes(props.value)) checked.value = true
+    else checked.value = false
+  } else {
+    if (props.modelValue === props.value) checked.value = true
+    else checked.value = false
+  }
+};
+
+watch(() => props.modelValue,  (newValue, oldValue) => {
+    syncValue();
+});
+
+onMounted(()=>{
+  syncValue()
+});
 </script>
