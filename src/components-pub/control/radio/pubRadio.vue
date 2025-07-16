@@ -39,10 +39,10 @@ const emit = defineEmits(['update:modelValue']);
 const updateCheckValue = (event) => {
   if ('object' === typeof props.modelValue) {
     checkList.value = props.modelValue
-    if (props.checked) {
+    if (checked.value) {
       checkList.value.push(event.target.value)
     } else {
-      checkList.value.splice(props.checkList.indexOf(event.target.value), 1)
+      checkList.value.splice(checkList.value.indexOf(event.target.value), 1)
     }
     emit('update:modelValue', checkList.value)
   } else {
