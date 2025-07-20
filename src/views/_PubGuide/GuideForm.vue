@@ -7,7 +7,7 @@
 
     </div>
     <div class="code">
-      <pre>{{ ``}}</pre>
+      <pre>{{ `` }}</pre>
     </div>
   </div>
 
@@ -20,7 +20,7 @@
       {{ sampleValue.checkbox1 }}
     </div>
     <div class="code">
-      <pre>{{ ``}}</pre>
+      <pre>{{ `` }}</pre>
     </div>
   </div>
 
@@ -33,7 +33,7 @@
       {{ sampleValue.radio1 }}
     </div>
     <div class="code">
-      <pre>{{ ``}}</pre>
+      <pre>{{ `` }}</pre>
     </div>
   </div>
 
@@ -45,7 +45,7 @@
       </pub-radio-list>
     </div>
     <div class="code">
-      <pre>{{ ``}}</pre>
+      <pre>{{ `` }}</pre>
     </div>
   </div>
 </template>
