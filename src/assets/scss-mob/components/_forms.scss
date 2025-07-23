@@ -1,0 +1,224 @@
+/* ********************
+ * NAME : FORMS CSS
+ * DATE : 2025.06.04
+ * AUTHOR : OHY
+ ******************** */
+
+@use "@/assets/scss-mob/abstracts" as *;
+
+
+/* ** checkbox & radio common ** */
+.form-check-group {
+  @include flex;
+  gap: 4px 16px;
+
+  .form-check-inline,
+  .form-check {
+    margin: 0;
+  }
+
+  &:not(.column) {
+    flex-wrap: wrap;
+  }
+
+  &.column {
+    flex-direction: column;
+
+    .form-check {
+      display: flex;
+      margin-bottom: 0;
+      min-height: auto;
+
+      .form-check-input {
+        &[type=checkbox] {
+          float: none;
+          margin-left: 0;
+        }
+      }
+    }
+
+  }
+}
+
+/* ** checkbox ** */
+.form-check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: auto;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  &.form-check-inline {
+    display: inline-flex;
+    margin-right: 0;
+  }
+
+  &.left-label {
+    .form-check-input {
+      order: 2;
+    }
+
+    .form-check-lebel {
+      order: 1;
+    }
+  }
+  &.my-profile{
+    .form-check-input {
+      &:disabled {
+        opacity: 1;
+      }
+      &[disabled],
+      &:disabled {
+        ~ .form-check-label {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .form-check-input {
+    font-size: 16px;
+    float: none;
+    margin-left: 0;
+    margin-top: 0;
+
+    &[type='checkbox'] {
+      flex-shrink: 0;
+      border-radius: 50%;
+      --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
+      border: 1px solid var(--Grayscale-7_55);
+      cursor: pointer;
+
+      &:checked[type='checkbox'] {
+        border: 0;
+        background-color: var(--Primary-color-Skyblue);
+
+        &:hover:not(:disabled) {
+          border: 0;
+          --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
+          background-color: var(--Primary-color-Skyblue-dark);
+        }
+
+        &:disabled {
+          background-color: var(--Grayscale-2_DD);
+        }
+      }
+
+      &:focus:not(:disabled) {
+        box-shadow: none;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: var(--Check-hover-bg);
+        --bs-form-check-bg-image: none;
+        border: 1px solid var(--Primary-color-Skyblue-dark);
+      }
+
+      &:disabled {
+        border: 1px solid var(--Grayscale-2_DD);
+        ~ .form-check-label {
+          color: var(--Grayscale-2_DD);
+          opacity: 1;
+        }
+        ~ .form-check-label-darker {
+          color: var(--Grayscale-7_55, #555);
+          opacity: 1;
+        }
+      }
+    }
+
+    .form-check-label {
+      &:disabled {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.type-rect {
+    @include flex($d: flex, $jc: flex-start, $ai: center);
+    gap: 8px;
+
+    .form-check-input {
+      &[type='checkbox'] {
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        border: 1px solid var(--Grayscale-7_55);
+        background-color: var(--Primary-color-White);
+
+        &:checked {
+          border: 1px solid var(--Primary-color-Skyblue);
+          --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.735168 4.05521L1.77917 3.02321L4.42797 5.64081L10.028 0.101608L11.072 1.13441L4.42717 7.70561L0.735168 4.05521Z' fill='white'/%3E%3C/svg%3E%0A");
+          background-size: 100%;
+        }
+
+        &:hover {
+          border-width: 1px;
+        }
+
+        &:disabled {
+          border: 1px solid var(--Grayscale-2_DD);
+        }
+      }
+    }
+
+    .form-check-label {
+      color: var(--Primary-color-Black);
+      line-height: 22px;
+    }
+  }
+
+  .form-check-label {
+    user-select: none;
+  }
+
+  &.sm {
+    display: flex !important;
+    gap: 8px;
+
+    .form-check-input {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .form-check-label {
+      font-size: 13px;
+    }
+  }
+}
+
+.form-check-star {
+  gap: 0 !important;
+  margin-right: 0;
+
+  .form-check-input {
+    &[type=checkbox] {
+      width: 12px;
+      height: 12px;
+      border: 0 !important;
+      background-color: transparent !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.49184 0.77813C5.68326 0.31176 6.29111 0.30328 6.49768 0.752692L6.50874 0.77813L7.83829 4.01543L11.3523 4.27099C11.8489 4.30713 12.0471 4.86804 11.7035 5.20451L11.6849 5.22201L11.6654 5.23907L8.97654 7.49493L9.81645 10.8873C9.93598 11.37 9.46523 11.7325 9.03837 11.5115L9.01671 11.4998L8.99514 11.487L6.00016 9.64218L3.00577 11.4868C2.58229 11.7481 2.09289 11.4098 2.17389 10.936L2.1785 10.9117L2.18412 10.8873L3.02379 7.49493L0.335591 5.23938C-0.0465519 4.91938 0.12167 4.34909 0.596695 4.27677L0.622435 4.27338L0.648295 4.27099L4.16229 4.01531L5.49184 0.77813Z' fill='%23AAAAAA'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:checked {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.49184 0.77813C5.68326 0.31176 6.29111 0.30328 6.49768 0.752692L6.50874 0.77813L7.83829 4.01543L11.3523 4.27099C11.8489 4.30713 12.0471 4.86804 11.7035 5.20451L11.6849 5.22201L11.6654 5.23907L8.97654 7.49493L9.81645 10.8873C9.93598 11.37 9.46523 11.7325 9.03837 11.5115L9.01671 11.4998L8.99514 11.487L6.00016 9.64218L3.00577 11.4868C2.58229 11.7481 2.09289 11.4098 2.17389 10.936L2.1785 10.9117L2.18412 10.8873L3.02379 7.49493L0.335591 5.23938C-0.0465519 4.91938 0.12167 4.34909 0.596695 4.27677L0.622435 4.27338L0.648295 4.27099L4.16229 4.01531L5.49184 0.77813Z' fill='%23FFA600'/%3E%3C/svg%3E%0A");
+      }
+      &:focus {
+        &:not(:disabled) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+/* ** radio ** */
+.form-radio {
+  &:checked {
+    ~ label {
+    }
+  }
+}

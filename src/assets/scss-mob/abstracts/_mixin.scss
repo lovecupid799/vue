@@ -1,0 +1,113 @@
+/* ********************
+ * NAME : MIXIN CSS
+ * DATE : 2025.06.04
+ * AUTHOR : OHY
+ ******************** */
+
+@mixin flex($d: flex, $fd: row, $ai: null, $jc: null, $gap: null) {
+  display: $d;
+  flex-direction: $fd;
+
+  @if ($ai) {
+    align-items: $ai;
+  }
+
+  @if ($jc) {
+    justify-content: $jc;
+  }
+
+  @if ($gap) {
+    gap: $gap;
+  }
+}
+
+@mixin blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@mixin ellipsis($lines: 1) {
+  display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin scrollbar {
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    width: 4px;
+    margin-left: -4px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    background:#bbb;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+@mixin scrollbar-x {
+  @include scrollbar;
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+@mixin font($value: null, $size: null) {
+  font-weight: 700;
+  font-family: "Samsung Sharp Sans";
+
+  @if($value != null) {
+    @if($value == "display1") {
+      font-size: 80px;
+    }
+    @else if($value == "display2") {
+      font-size: 60px;
+    }
+    @else if($value == "display3") {
+      font-size: 48px;
+    }
+    @else if($value == "display4") {
+      font-size: 38px;
+    }
+    @else if($value == "display5") {
+      font-size: 32px;
+    }
+    @else if($value == "display6") {
+      font-size: 24px;
+    }
+    @else if($value == "display7") {
+      font-size: 22px;
+      line-height: 30px;
+    }
+     @else if($value == "display7_1") {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    @else if($value == "display8") {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    @else if($value == "display9") {
+      font-size: 14px;
+    }
+  }
+
+  @else if($size != null) {
+    font-size:$size;
+  }
+
+
+}

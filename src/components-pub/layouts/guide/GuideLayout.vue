@@ -21,6 +21,9 @@
                 <router-link :to="{ name: 'worksheet' }">퍼블 현황판</router-link>
               </li>
               <li>
+                <router-link :to="{ name: '/mob/worksheet' }">퍼블 모바일 현황판</router-link>
+              </li>
+              <li>
                 <router-link :to="{ name: 'rule' }"
                     >퍼블 환경 및 규칙</router-link
                 >

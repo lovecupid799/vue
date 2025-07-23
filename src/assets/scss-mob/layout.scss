@@ -1,0 +1,38 @@
+/* ****
+ * NAME : NSP-MOB-LAYOUT CSS
+ * DATE : 2025.07.23
+ * AUTHOR : NSP-PUBLISH MEMBER
+ **** */
+
+@charset "utf-8";
+
+@use "@/assets/scss-mob/abstracts" as *;
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#mob-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+/* **** header **** */
+header {
+  z-index: 400;
+}
+
+#mob-header {
+}
+
+
+/* **** container **** */
+#mob-container {
+  @include flex($fd: column);
+  flex: 1;
+}
+
