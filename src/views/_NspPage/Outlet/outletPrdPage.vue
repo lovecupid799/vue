@@ -137,7 +137,7 @@ function movePage(pageIndex) {
 const prdPriceUnit = ref('USD');
 const cardLists = ref([
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025) 98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -148,7 +148,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker Music Frame Dolby Atmos Smart Speaker',
         dc: 'free',
@@ -158,7 +158,7 @@ const cardLists = ref([
     ],
   },
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -169,7 +169,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -177,7 +177,7 @@ const cardLists = ref([
         price2: '299.99',
       },
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -187,7 +187,7 @@ const cardLists = ref([
     ],
   },
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -198,7 +198,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: '11HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -207,7 +207,7 @@ const cardLists = ref([
         price2: '299.99',
       },
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: '22HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -215,7 +215,7 @@ const cardLists = ref([
         price2: '299.99',
       },
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: '33HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -225,7 +225,7 @@ const cardLists = ref([
     ],
   },
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -236,7 +236,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -246,7 +246,7 @@ const cardLists = ref([
     ],
   },
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -257,7 +257,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -265,7 +265,7 @@ const cardLists = ref([
         price2: '299.99',
       },
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -275,7 +275,7 @@ const cardLists = ref([
     ],
   },
   {
-    imgSrc: '/assets/images/sample/prd-card-thumb-no.jpg',
+    imgSrc: './assets/images/sample/prd-card-thumb-no.jpg',
     description: '98" Neo QLED QN93F 4K Vision AI Smart TV (2025)',
     modelCode: 'QN55S95CAFXZA',
     sales: 100,
@@ -286,7 +286,7 @@ const cardLists = ref([
     bundleOpen: false,
     bundle: [
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
@@ -294,7 +294,7 @@ const cardLists = ref([
         price2: '299.99',
       },
       {
-        imgSrc: '/assets/images/sample/im-outlet-sample-bundle2.png',
+        imgSrc: './assets/images/sample/im-outlet-sample-bundle2.jpg',
         code: 'HW-LS60D/ZG',
         desc: 'Music Frame Dolby Atmos Smart Speaker',
         dc: '25',
