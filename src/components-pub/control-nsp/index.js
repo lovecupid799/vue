@@ -1,6 +1,9 @@
 import PrdCard from '../control-nsp/NspPrdList/PrdCard.vue'
 import PrdListPage from '../control-nsp/NspPrdList/PrdListPage.vue'
 import NspRadio from '../control-nsp/NspRadio/NspRadio.vue'
+import NspCounter from '../control-nsp/NspCounter/NspCounter.vue'
+import NspBtn from '../control-nsp/NspBtn/NspBtn.vue'
+import SdlBadge from '../control-nsp/SdlBadge/SdlBadge.vue'
 // import PrdCardList from '../control-nsp/NspPrdList/PrdCardList.vue'
 
 export default {
@@ -9,5 +12,8 @@ export default {
     // Vue.component('prd-card-list', PrdCardList)
     Vue.component('prd-card', PrdCard)
     Vue.component('nsp-radio', NspRadio)
+    Vue.component('nsp-counter', NspCounter)
+    Vue.component('nsp-btn', NspBtn)
+    Vue.component('sdl-badge', SdlBadge)
   },
 }
