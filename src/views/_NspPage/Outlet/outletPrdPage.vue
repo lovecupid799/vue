@@ -127,11 +127,11 @@ function movePage(pageIndex) {
 }
 
 //product type -  multi select
-const searchParams = ref({
-  modelList: [],
-});
+// const searchParams = ref({
+//   modelList: [],
+// });
 
-const searchOptions = ['조회조건111', '조회조건222', '조회조건333', '조회조건444'];
+// const searchOptions = ['조회조건111', '조회조건222', '조회조건333', '조회조건444'];
 
 //list data
 const prdPriceUnit = ref('USD');
@@ -315,7 +315,7 @@ const addCart = (card, index) => {
 };
 
 //bundle toggle
-const bundleToggle = (cardIndex, event) => {
+const bundleToggle = cardIndex => {
   cardLists.value.map((item, i) => {
     if (cardIndex !== i) {
       item.bundleOpen = false;

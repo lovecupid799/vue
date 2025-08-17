@@ -533,7 +533,7 @@ const cardLists = ref([
 }
 
 .outlet-card-list {
-
+  border: 1px solid red;
 }
 
 
