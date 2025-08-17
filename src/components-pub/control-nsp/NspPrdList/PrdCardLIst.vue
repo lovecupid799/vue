@@ -1,6 +1,6 @@
 <template>
   <div class="outlet-card-list">
-    <slot />
+    <slot></slot>
   </div>
 </template>
 

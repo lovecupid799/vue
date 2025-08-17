@@ -81,7 +81,7 @@
 import { ref} from 'vue';
 import OutletOptionTop from './PrdOptionTop.vue';
 import OutletCard from './PrdCard.vue';
-import OutletCardList from './PrdCardList.vue';
+import OutletCardList from './PrdCardLIst.vue';
 
 //Bread Crumb Data
 const breadcrumb = ref({
@@ -529,7 +529,7 @@ const cardLists = ref([
 }
 
 .outlet-card-img {
-
+  border: 1px solid red;
 }
 
 .outlet-card-list {
@@ -721,7 +721,7 @@ const cardLists = ref([
     .prd-tabs-menu {
       &.is-scroll {
         .prd-detail-tabs {
-
+          border: 1px solid red;
         }
       }
     }
