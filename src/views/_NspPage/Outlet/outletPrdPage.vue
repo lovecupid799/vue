@@ -15,14 +15,14 @@
           <div class="left">
             <div class="prd-select">
               <span class="label">Product Group / Product</span>
-              <nsp-select
+              <!-- <nsp-select
                 class="nsp-select"
                 v-model="searchParams.modelList"
                 :options="searchOptions"
                 multiple
                 clearable
                 :confirmBtnShow="false"
-                :placeholder="'Select Product Group / Product'" />
+                :placeholder="'Select Product Group / Product'" /> -->
             </div>
           </div>
 
