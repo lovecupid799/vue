@@ -1,7 +1,7 @@
-import PrdCardList from '../control-nsp/NspPrdList/PrdCardList.vue'
 import PrdCard from '../control-nsp/NspPrdList/PrdCard.vue'
 import PrdListPage from '../control-nsp/NspPrdList/PrdListPage.vue'
 import NspRadio from '../control-nsp/NspRadio/NspRadio.vue'
+import PrdCardList from '../control-nsp/NspPrdList/PrdCardList.vue'
 
 export default {
   install(Vue) {
