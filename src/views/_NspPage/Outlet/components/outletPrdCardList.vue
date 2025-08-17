@@ -1,5 +1,5 @@
 <template>
   <div class="outlet-prd-list">
-    <slot />
+    <slot></slot>
   </div>
 </template>
