@@ -70,9 +70,21 @@
       <pre>{{ ``}}</pre>
     </div>
   </div>
+
+
+  <bottom-slide-banner :ban-show="banValue">
+    <div>ddd</div>
+    <button @click="banValue = !banValue">닫기</button>
+  </bottom-slide-banner>
 </template>
 <script setup>
-import {ref, watch} from 'vue';
+import {onMounted, ref, watch} from 'vue';
+
+const banValue = ref(false);
+
+onMounted(() => {
+  banValue.value = true;
+});
 
 //filter
 const filterList1 = ref([

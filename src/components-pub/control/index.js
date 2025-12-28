@@ -11,7 +11,7 @@ import PubChipsList from '../control/chips/pubChipsList.vue'
 import PubToggle from '../control/toggle/pubToggle.vue'
 import PubButton from '../control/button/pubButton.vue'
 import CntButton from '../control/button/pubButtonWrap.vue'
-
+import BottomSlideBanner from '../control/bottomSlideBanner/BottomSlideBanner.vue'
 import CheckBox from '../control/checkbox/pubCheckBox.vue'
 
 export default {
@@ -30,5 +30,6 @@ export default {
     Vue.component('pub-checkbox', CheckBox)
     Vue.component('pub-radio', PubRadio)
     Vue.component('pub-radio-list', PubRadioList)
+    Vue.component('bottom-slide-banner', BottomSlideBanner)
   },
 }
